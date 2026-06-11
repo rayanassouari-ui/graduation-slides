@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentation of Graduates</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-color: #1f2e2e;
+    --bg-color-2: #16221f;
+    --gold: #f0c84a;
+    --white: #f5f5f0;
+    --subtext: #d8d8cf;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color-2) 100%);
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--white);
+    user-select: none;
+  }
+
+  .stage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  /* ---------- Chevron decorations ---------- */
+  .chevron {
+    position: absolute;
+    pointer-events: none;
+  }
+  .chevron svg { display: block; width: 100%; height: 100%; }
+  .chevron-tr {
+    top: -6vmin;
+    right: -6vmin;
+    width: 32vmin;
+    height: 32vmin;
+  }
+  .chevron-bl {
+    bottom: -6vmin;
+    left: -6vmin;
+    width: 28vmin;
+    height: 28vmin;
+    transform: rotate(180deg);
+  }
+  .chevron-r {
+    top: 35%;
+    right: -2vmin;
+    width: 8vmin;
+    height: 12vmin;
+  }
+  .chevron-l {
+    top: 45%;
+    left: -2vmin;
+    width: 8vmin;
+    height: 12vmin;
+    transform: rotate(180deg);
+  }
+
+  /* spotlight glow for title slide */
+  .spotlight {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: 60vh;
+    background: radial-gradient(ellipse at top, rgba(58,79,79,0.55) 0%, rgba(58,79,79,0) 70%);
+    clip-path: polygon(35% 0%, 65% 0%, 58% 100%, 42% 100%);
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+  }
+
+  /* ---------- Slides ---------- */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.55s ease;
+  }
+  .slide.active {
+    display: flex;
+  }
+  .slide.visible {
+    opacity: 1;
+  }
+
+  /* Title slide */
+  .slide-title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .slide-title h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    color: var(--gold);
+    font-size: clamp(2.2rem, 6.5vw, 5.2rem);
+    letter-spacing: 0.08em;
+    margin: 0;
+    line-height: 1.15;
+    text-shadow: 0 0 24px rgba(240,200,74,0.25);
+  }
+  .title-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0 18px;
+    width: min(60vw, 520px);
+  }
+  .title-divider .line {
+    flex: 1;
+    height: 2px;
+    background: var(--gold);
+  }
+  .title-divider .diamond {
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+  .slide-title .subtitle {
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+
+  /* Student slide */
+  .slide-student {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .photo-wrap {
+    position: relative;
+    flex: 0 0 38%;
+    max-width: 38%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(1.02);
+  }
+  .photo-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: var(--gold);
+  }
+
+  .info-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4vh 6vw;
+    min-width: 0;
+  }
+  .info-wrap h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: var(--gold);
+    font-size: clamp(1.8rem, 4.5vw, 3.4rem);
+    line-height: 1.15;
+    margin: 0;
+    letter-spacing: 0.04em;
+    word-break: break-word;
+  }
+  .name-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 22px 0 18px;
+    max-width: 90%;
+  }
+  .name-divider .line {
+    flex: 1;
+    height: 2px;
+    background: var(--gold);
+  }
+  .name-divider .diamond {
+    width: 11px;
+    height: 11px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+  .school {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin: 0 0 24px;
+    text-transform: uppercase;
+  }
+  .description {
+    font-size: clamp(0.95rem, 1.4vw, 1.25rem);
+    color: var(--subtext);
+    max-width: 85%;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    position: absolute;
+    bottom: 18px;
+    left: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--subtext);
+    letter-spacing: 0.04em;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  @media (max-width: 760px) {
+    .slide-student { flex-direction: column; }
+    .photo-wrap { flex: 0 0 45%; max-width: 100%; height: 45%; }
+    .info-wrap { padding: 3vh 6vw; }
+    .description { max-width: 100%; }
+    .name-divider, .description { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stage" id="stage">
+
+  <!-- Decorative chevrons -->
+  <div class="chevron chevron-tr">
+    <svg viewBox="0 0 200 200" preserveAspectRatio="none">
+      <polyline points="40,0 100,60 160,0" fill="none" stroke="#f0c84a" stroke-width="4"/>
+      <polyline points="0,30 70,100 140,30" fill="none" stroke="#f0c84a" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="chevron chevron-bl">
+    <svg viewBox="0 0 200 200" preserveAspectRatio="none">
+      <polyline points="40,0 100,60 160,0" fill="none" stroke="#f0c84a" stroke-width="4"/>
+      <polyline points="0,30 70,100 140,30" fill="none" stroke="#f0c84a" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="chevron chevron-r">
+    <svg viewBox="0 0 100 150" preserveAspectRatio="none">
+      <polyline points="100,0 0,75 100,150" fill="none" stroke="#f0c84a" stroke-width="4"/>
+    </svg>
+  </div>
+  <div class="chevron chevron-l">
+    <svg viewBox="0 0 100 150" preserveAspectRatio="none">
+      <polyline points="100,0 0,75 100,150" fill="none" stroke="#f0c84a" stroke-width="4"/>
+    </svg>
+  </div>
+
+  <div class="spotlight" id="spotlight"></div>
+
+  <!-- Title slide -->
+  <div class="slide slide-title active visible" data-index="0">
+    <h1>PRESENTATION</h1>
+    <h1>OF GRADUATES</h1>
+    <div class="title-divider">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+    <div class="subtitle">{{ class_year }}</div>
+  </div>
+
+  <!-- Student slides -->
+  {% for s in students %}
+  <div class="slide slide-student" data-index="{{ loop.index }}">
+    <div class="photo-wrap">
+      <img src="{{ s.photo }}" alt="{{ s.name }}" loading="lazy">
+    </div>
+    <div class="info-wrap">
+      <h2>{{ s.name|upper }}</h2>
+      <div class="name-divider">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line"></div>
+      </div>
+      <p class="school">{{ s.school }}</p>
+      <p class="description">{{ s.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="footer">
+    <span>Click / press → for next</span>
+    <span id="counter">1 / {{ students|length + 1 }}</span>
+  </div>
+
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  const spotlight = document.getElementById('spotlight');
+  const counter = document.getElementById('counter');
+  let current = 0;
+  let animating = false;
+
+  function showSlide(newIndex) {
+    if (animating || newIndex === current) return;
+    animating = true;
+
+    const oldSlide = slides[current];
+    const newSlide = slides[newIndex];
+
+    oldSlide.classList.remove('visible');
+
+    setTimeout(() => {
+      oldSlide.classList.remove('active');
+      newSlide.classList.add('active');
+      // force reflow so the transition applies
+      void newSlide.offsetWidth;
+      newSlide.classList.add('visible');
+
+      spotlight.style.opacity = (newIndex === 0) ? '1' : '0';
+      counter.textContent = (newIndex + 1) + ' / ' + total;
+      current = newIndex;
+
+      setTimeout(() => { animating = false; }, 600);
+    }, 550);
+  }
+
+  function next() { showSlide((current + 1) % total); }
+  function prev() { showSlide((current - 1 + total) % total); }
+
+  document.getElementById('stage').addEventListener('click', next);
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' || e.key === 'ArrowRight') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft') prev();
+  });
+
+  // init spotlight state
+  spotlight.style.opacity = (current === 0) ? '1' : '0';
+</script>
+
+</body>
+</html>
