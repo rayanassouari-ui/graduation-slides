@@ -108,7 +108,7 @@ STUDENTS = [
     },
      {
         "name": "Leanna Fuster",
-        "photo": "/static/photos/student3.jpg",
+        "photo": "https://cdn.discordapp.com/attachments/1460818048654246043/1514748266896691281/714023130_1563359182066744_1274354215665151834_n.png?ex=6a2c7ec1&is=6a2b2d41&hm=8549ecbfe68fa557e58160b211cd563e35a9810fe5df70a53e5233d037acefca&",
         "school": "Wilbur Cross",
         "description": "To be added..."
     },
