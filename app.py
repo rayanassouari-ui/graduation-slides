@@ -88,12 +88,6 @@ STUDENTS = [
         "school": "HillHOUSE",
         "description": "To be added..."
     },
-     {
-        "name": "Jareliz Dejesus Gonzalez",
-        "photo": "/static/photos/student3.jpg",
-        "school": "HillHOUSE",
-        "description": "To be added..."
-    },
     {
         "name": "Alexis Diaz Gutierrez",
         "photo": "/static/photos/student3.jpg",
@@ -230,12 +224,6 @@ STUDENTS = [
         "name": "Mirwais Rahmani",
         "photo": "/static/photos/student3.jpg",
         "school": "CAREER",
-        "description": "To be added..."
-    },
-       {
-        "name": "Mirwais Rahmani",
-        "photo": "/static/photos/student3.jpg",
-        "school": "HILLHOUSE",
         "description": "To be added..."
     },
     {
