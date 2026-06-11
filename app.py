@@ -23,22 +23,22 @@ app = Flask(__name__)
 # ----------------------------------------------------------------------
 STUDENTS = [
     {
-        "name": "Rohid Shamshad",
+        "name": "Joel Emiliano Almeida Figueiras",
         "photo": "/static/photos/student1.jpg",
         "school": "Wilbur Cross",
-        "description": "Loves basketball, video games, and making everyone laugh in class."
+        "description": "To be added.."
     },
     {
-        "name": "Ava Martinez",
+        "name": "Monserrat Arenas Martinez",
         "photo": "/static/photos/student2.jpg",
-        "school": "Lincoln High School",
-        "description": "Loves art, soccer, and never misses a sunset photo."
+        "school": "Wilbur Cross",
+        "description": "To be added..."
     },
     {
-        "name": "Liam Chen",
+        "name": "Iliana Arocho",
         "photo": "/static/photos/student3.jpg",
-        "school": "Riverside High School",
-        "description": "Future engineer, robotics club captain, coffee enthusiast (the smell, not the taste)."
+        "school": "High School in the Community",
+        "description": "To be added..."
     },
 ]
 
