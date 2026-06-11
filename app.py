@@ -76,6 +76,246 @@ STUDENTS = [
         "school": "Wilbur Cross",
         "description": "To be added..."
     },
+      {
+        "name": "Angel Jose Cruz",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+    {
+        "name": "Jareliz Dejesus Gonzalez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+     {
+        "name": "Jareliz Dejesus Gonzalez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+    {
+        "name": "Alexis Diaz Gutierrez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+      {
+        "name": "Khalilah Marie Donnelly",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+      {
+        "name": "Danna Alejandra Espin",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+     {
+        "name": "Leanna Fuster",
+        "photo": "/static/photos/student3.jpg",
+        "school": "Wilbur Cross",
+        "description": "To be added..."
+    },
+     {
+        "name": "Destiny Lauren Gibbs",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+      {
+        "name": "Abel Yamil Gonzalez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+      {
+        "name": "Sean Haynes",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+       {
+        "name": "Darianny Elizabeth Hernandez Adames",
+        "photo": "/static/photos/student3.jpg",
+        "school": "Wilbur Cross",
+        "description": "To be added..."
+    },
+      {
+        "name": "Dazani Hough Faulks",
+        "photo": "/static/photos/student3.jpg",
+        "school": "Metropolitan Business Academy",
+        "description": "To be added..."
+    },
+      {
+        "name": "Raima Kalampai",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+       {
+        "name": "Wilneysha Michelle Lopez Ortiz",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+      {
+        "name": "Aliana Angela Lopez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "ELI WHITNEY",
+        "description": "To be added..."
+    },
+    {
+        "name": "Jeziel A Martinez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "WILBUR CROSS",
+        "description": "To be added..."
+    },
+     {
+        "name": "Matthew Muniz",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+     {
+        "name": "Merlyn Anhelis Ninasunta Vegas",
+        "photo": "/static/photos/student3.jpg",
+        "school": "WILBUR CROSS",
+        "description": "To be added..."
+    },
+     {
+        "name": "Roiy Nizami",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+    {
+        "name": "Luis Ismael Padilla",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+      {
+        "name": "Sima Paktin",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+       {
+        "name": "Mannix Eli Pena",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+       {
+        "name": "Masen Elijah Pena",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+      {
+        "name": "Cristobal Andres Pluas Palma",
+        "photo": "/static/photos/student3.jpg",
+        "school": "WILBUR CROSS",
+        "description": "To be added..."
+    },
+     {
+        "name": "Jeremiah Amir Ragsdale",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+       {
+        "name": "Mirwais Rahmani",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+       {
+        "name": "Mirwais Rahmani",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+    {
+        "name": "Carl Roberts",
+        "photo": "/static/photos/student3.jpg",
+        "school": "Metropolitan Business Academy",
+        "description": "To be added..."
+    },
+     {
+        "name": "Arzo Sadiq",
+        "photo": "/static/photos/student3.jpg",
+        "school": "Metropolitan Business Academy",
+        "description": "To be added..."
+    },
+      {
+        "name": "Xavier Sampedro Rosa",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+     {
+        "name": "Juan Rafael Scruggs",
+        "photo": "/static/photos/student3.jpg",
+        "school": "High School in the Community",
+        "description": "To be added..."
+    },
+     {
+        "name": "Rohid Shamshad",
+        "photo": "/static/photos/student3.jpg",
+        "school": "WILBUR CROSS",
+        "description": "To be added..."
+    },
+       {
+        "name": "Maurice Lamont Smith",
+        "photo": "/static/photos/student3.jpg",
+        "school": "SOUND",
+        "description": "To be added..."
+    },
+     {
+        "name": "Alaena Lee Soto",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CO-OP",
+        "description": "To be added..."
+    },
+      {
+        "name": "Eric Maurice Speer",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
+      {
+        "name": "Jostin Enrique Suarez Quichimbo",
+        "photo": "/static/photos/student3.jpg",
+        "school": "WILBUR CROSS",
+        "description": "To be added..."
+    },
+      {
+        "name": "Nydeliz Dariels Torres",
+        "photo": "/static/photos/student3.jpg",
+        "school": "Eli Whitney",
+        "description": "To be added..."
+    },
+      {
+        "name": "Caeli Love Tran Hamilton",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CO-OP",
+        "description": "To be added..."
+    },
+      {
+        "name": "Aiden Alexander Velazquez",
+        "photo": "/static/photos/student3.jpg",
+        "school": "High School in the Community",
+        "description": "To be added..."
+    },
+     {
+        "name": "Gianna Washington",
+        "photo": "/static/photos/student3.jpg",
+        "school": "CAREER",
+        "description": "To be added..."
+    },
 ]
 
 CLASS_YEAR = "Class of 2026"
