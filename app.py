@@ -89,6 +89,12 @@ STUDENTS = [
         "description": "To be added..."
     },
     {
+        "name": "Nagedlie Sofia David",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": "To be added..."
+    },
+    {
         "name": "Jareliz Dejesus Gonzalez",
         "photo": "/static/photos/student3.jpg",
         "school": "HillHOUSE",
