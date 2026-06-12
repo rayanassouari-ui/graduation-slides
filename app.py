@@ -24,7 +24,7 @@ app = Flask(__name__)
 STUDENTS = [
         {
         "name": "Bibi Zahra Adnan",
-        "photo": "blob:https://www.instagram.com/cc2f0e3a-a8f4-47a6-b9a1-a65ee96b638e",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719873420_1751813175814242_721287650445145070_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=12eto75BHuwQ7kNvwFzAnmI&_nc_oc=Adojdp4VWJRCKkLAZvD6uSb3XONIJgaa25ygYHvqlwojMqf7hToyrPGHefYLwWtvPF4_oJB2xHZPf2fOufOGka8L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHgpaUAI5_fl6f_Zna2HtE7CO5EmXmIEkYqt56vB8F8Gg&oe=6A53D034",
         "school": "HillHOUSE",
         "description": ""
     },
