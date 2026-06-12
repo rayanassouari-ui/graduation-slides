@@ -149,23 +149,63 @@
     flex: 0 0 38%;
     max-width: 38%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1200px;
+  }
+  .photo-frame {
+    position: relative;
+    width: min(60%, 320px);
+    aspect-ratio: 3 / 4;
+    border: 3px solid var(--gold);
+    padding: 10px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: 0 0 0 1px rgba(240,200,74,0.25), 0 18px 40px rgba(0,0,0,0.45);
     overflow: hidden;
   }
-  .photo-wrap img {
+  .photo-frame img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     filter: saturate(1.02);
   }
-  .photo-wrap::after {
+  /* The black cover panel that animates over the photo on transition */
+  .photo-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0b0f0f;
+    transform: translateX(-115%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .photo-frame::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
     height: 3px;
     background: var(--gold);
+    z-index: 3;
+  }
+
+  /* Cover animation: starts hidden behind/left of frame, shifts slightly right (peek),
+     then sweeps fully over the photo to cover it, then retreats back to hidden */
+  @keyframes coverSweep {
+    0%   { transform: translateX(-115%); }
+    35%  { transform: translateX(-15%); }
+    50%  { transform: translateX(0%); }
+    85%  { transform: translateX(0%); }
+    100% { transform: translateX(-115%); }
+  }
+  .photo-cover.sweeping {
+    animation: coverSweep 1.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   }
 
   .info-wrap {
@@ -238,7 +278,8 @@
 
   @media (max-width: 760px) {
     .slide-student { flex-direction: column; }
-    .photo-wrap { flex: 0 0 45%; max-width: 100%; height: 45%; }
+    .photo-wrap { flex: 0 0 42%; max-width: 100%; height: 42%; }
+    .photo-frame { width: min(55vw, 260px); }
     .info-wrap { padding: 3vh 6vw; }
     .description { max-width: 100%; }
     .name-divider, .description { max-width: 100%; }
@@ -291,7 +332,10 @@
   {% for s in students %}
   <div class="slide slide-student" data-index="{{ loop.index }}">
     <div class="photo-wrap">
-      <img src="{{ s.photo }}" alt="{{ s.name }}" loading="lazy">
+      <div class="photo-frame">
+        <img src="{{ s.photo }}" alt="{{ s.name }}" loading="lazy">
+        <div class="photo-cover"></div>
+      </div>
     </div>
     <div class="info-wrap">
       <h2>{{ s.name|upper }}</h2>
@@ -340,6 +384,17 @@
       spotlight.style.opacity = (newIndex === 0) ? '1' : '0';
       counter.textContent = (newIndex + 1) + ' / ' + total;
       current = newIndex;
+
+      // Trigger the black cover sweep over the new slide's photo, if present
+      const cover = newSlide.querySelector('.photo-cover');
+      if (cover) {
+        cover.classList.remove('sweeping');
+        void cover.offsetWidth; // reflow
+        cover.classList.add('sweeping');
+        cover.addEventListener('animationend', () => {
+          cover.classList.remove('sweeping');
+        }, { once: true });
+      }
 
       setTimeout(() => { animating = false; }, 600);
     }, 550);
