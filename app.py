@@ -226,8 +226,14 @@ STUDENTS = [
         "school": "WILBUR CROSS",
         "description": "To be added..."
     },
-     {
+      {
         "name": "Jeremiah Amir Ragsdale",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": "To be added..."
+    },
+     {
+        "name": "Angie Porter",
         "photo": "/static/photos/student3.jpg",
         "school": "HILLHOUSE",
         "description": "To be added..."
