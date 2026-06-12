@@ -186,7 +186,7 @@ STUDENTS = [
     },
     {
         "name": "Luis Ismael Padilla",
-        "photo": "/static/photos/student3.jpg",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719026669_27125397250443770_4037617840432896933_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=fZRF73io9lkQ7kNvwEh1eiY&_nc_oc=AdpCwLe340rFvO53m0A8xgS111tZxQ79_q94ngTG7ieCxaUEVJ3b2lO7awXG_02yzIqsnF32n9Bu5yRKK1BwrHdX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEIdgOZUKf6fOJHEO9pK6Qf_f8Gky8s8xXuMW6HIEW7kw&oe=6A52C9B7",
         "school": "HILLHOUSE",
         "description": "To be added..."
     },
