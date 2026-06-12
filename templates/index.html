@@ -206,18 +206,21 @@
     display: block;
     filter: saturate(1.02);
   }
-  /* The new frame starts hidden directly behind the old one, slides out to
-     the right (emerging from behind), then slides back left to cover it */
+  /* The new frame starts fully hidden directly behind the old one, then
+     fades/pops into view as it slides out to the right (emerging from
+     behind), then slides back left to cover the old frame */
   .photo-frame.frame-enter {
     z-index: 0;
+    opacity: 0;
     animation: frameEmergeCover 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   }
   @keyframes frameEmergeCover {
-    0%   { transform: translateX(0%) scale(0.94); z-index: 0; }
-    8%   { z-index: 0; }
+    0%   { transform: translateX(0%) scale(0.94); opacity: 0; z-index: 0; }
+    8%   { opacity: 0; z-index: 0; }
     9%   { z-index: 3; }
-    45%  { transform: translateX(55%) scale(0.94); z-index: 3; }
-    100% { transform: translateX(0%) scale(1); z-index: 3; }
+    18%  { opacity: 1; }
+    45%  { transform: translateX(55%) scale(0.94); opacity: 1; z-index: 3; }
+    100% { transform: translateX(0%) scale(1); opacity: 1; z-index: 3; }
   }
   /* Old frame stays put underneath, fading slightly once covered */
   .photo-frame.frame-exit {
@@ -433,21 +436,29 @@
     const onFrameDone = () => {
       newFrame.removeEventListener('animationend', onFrameDone);
 
-      // Reveal new slide's text info now that the frame has covered the old one
-      if (newInfo) {
-        void newInfo.offsetWidth;
-        newInfo.classList.add('info-reveal');
-      }
-
-      // Clean up old slide and animation classes
+      // Clean up old slide and frame animation classes immediately
       oldSlide.classList.remove('active', 'visible', 'outgoing');
       if (oldInfo) oldInfo.classList.remove('info-fade');
       oldFrame.classList.remove('frame-exit');
       newFrame.classList.remove('frame-enter');
-      newSlide.classList.remove('incoming');
       newSlide.classList.add('active', 'visible');
 
       current = newIndex;
+
+      // Reveal new slide's text info now that the frame has covered the old one.
+      // Keep the 'incoming' class so the fade-in transition can play, then
+      // clean it up once the transition finishes.
+      if (newInfo) {
+        void newInfo.offsetWidth;
+        newInfo.classList.add('info-reveal');
+        newInfo.addEventListener('transitionend', () => {
+          newSlide.classList.remove('incoming');
+          newInfo.classList.remove('info-reveal');
+        }, { once: true });
+      } else {
+        newSlide.classList.remove('incoming');
+      }
+
       setTimeout(() => { animating = false; }, 150);
     };
 
