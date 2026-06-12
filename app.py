@@ -22,6 +22,12 @@ app = Flask(__name__)
 #   - a path to a file in static/photos, e.g. "/static/photos/student1.jpg"
 # ----------------------------------------------------------------------
 STUDENTS = [
+        {
+        "name": "Bibi Zahra Adnan",
+        "photo": "https://hosting.photobucket.com/4ee183e9-b286-4a18-acae-7c9a5d508945/7cc8d473-1fc8-4700-a296-92206cc35175.jpeg?width=200&height=300&fit=bounds&agent-check=true",
+        "school": "HillHOUSE",
+        "description": ""
+    },
     {
         "name": "Joel Emiliano Almeida Figueiras",
         "photo": "https://hosting.photobucket.com/4ee183e9-b286-4a18-acae-7c9a5d508945/7cc8d473-1fc8-4700-a296-92206cc35175.jpeg?width=200&height=300&fit=bounds&agent-check=true",
