@@ -108,7 +108,7 @@ STUDENTS = [
     },
      {
         "name": "Leanna Fuster",
-        "photo": "https://cdn.discordapp.com/attachments/1460818048654246043/1514748266896691281/714023130_1563359182066744_1274354215665151834_n.png?ex=6a2c7ec1&is=6a2b2d41&hm=8549ecbfe68fa557e58160b211cd563e35a9810fe5df70a53e5233d037acefca&",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/714023130_1563359182066744_1274354215665151834_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=zqMO2z8k3HcQ7kNvwH-WLUQ&_nc_oc=Adr0eONZzfmb4se9xnJRgc10nlM-ZC6Fh6i5nCP9jNzUg6NrAnqwBzyrxVYbAQmAJeo2QybwE3S7vzmzqV1ahaGp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gH8_F330itfvSq4-TCPISRnNC0PNPVy0wafA9wj_qbmcA&oe=6A52A225",
         "school": "Wilbur Cross",
         "description": "To be added..."
     },
@@ -282,7 +282,7 @@ STUDENTS = [
     },
       {
         "name": "Nydeliz Dariels Torres",
-        "photo": "https://cdn.discordapp.com/attachments/1460818048654246043/1514746031798091796/0461D9FE-64A7-4B35-B141-9AAFCEB52C1C.png?ex=6a2c7cac&is=6a2b2b2c&hm=df499cc9b0c2d30a585aa35e88cbb0e59d47b0a5cba56e3ab7d5308b4e31344b&",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722446876_1588670972683669_2424562583428653438_n.png?_nc_cat=100&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=7jVWMQ_JXgkQ7kNvwFXXeYH&_nc_oc=Adq3s6RgQpbLa10fakFk9DwnjX6uB5DBK7J3GboOTA4Kv9hjhiYKibKwN1X1apMIoTGDj8NJymjPUWZLGMQTVLQH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFXHtVLYw2HObmB8DAbE-Y4GHlgMl8no8H7NJTKX4SqVw&oe=6A52E402",
         "school": "Eli Whitney",
         "description": "you cant be stuck on the past when your future is bright."
     },
