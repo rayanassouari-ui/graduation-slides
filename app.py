@@ -24,7 +24,7 @@ app = Flask(__name__)
 STUDENTS = [
         {
         "name": "Bibi Zahra Adnan",
-        "photo": "https://hosting.photobucket.com/4ee183e9-b286-4a18-acae-7c9a5d508945/7cc8d473-1fc8-4700-a296-92206cc35175.jpeg?width=200&height=300&fit=bounds&agent-check=true",
+        "photo": "blob:https://www.instagram.com/cc2f0e3a-a8f4-47a6-b9a1-a65ee96b638e",
         "school": "HillHOUSE",
         "description": ""
     },
