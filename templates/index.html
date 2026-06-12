@@ -96,6 +96,23 @@
   .slide.visible {
     opacity: 1;
   }
+  .slide.incoming {
+    display: flex;
+    opacity: 1;
+    z-index: 4;
+  }
+  .slide.incoming .info-wrap {
+    opacity: 0;
+  }
+  .slide.incoming .info-wrap.info-reveal {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .slide.outgoing {
+    display: flex;
+    opacity: 1;
+    z-index: 2;
+  }
 
   /* Title slide */
   .slide-title {
@@ -164,25 +181,7 @@
     background: rgba(0,0,0,0.15);
     box-shadow: 0 0 0 1px rgba(240,200,74,0.25), 0 18px 40px rgba(0,0,0,0.45);
     overflow: hidden;
-  }
-  .photo-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: saturate(1.02);
-  }
-  /* The black cover panel that animates over the photo on transition */
-  .photo-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0b0f0f;
-    transform: translateX(-115%);
-    z-index: 2;
-    pointer-events: none;
+    z-index: 1;
   }
   .photo-frame::after {
     content: "";
@@ -192,20 +191,31 @@
     bottom: 8px;
     height: 3px;
     background: var(--gold);
+    z-index: 1;
+  }
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(1.02);
+  }
+  /* The new frame slides in from the right and overrides the old one */
+  .photo-frame.frame-enter {
     z-index: 3;
+    animation: frameSlideIn 0.9s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   }
-
-  /* Cover animation: starts hidden behind/left of frame, shifts slightly right (peek),
-     then sweeps fully over the photo to cover it, then retreats back to hidden */
-  @keyframes coverSweep {
-    0%   { transform: translateX(-115%); }
-    35%  { transform: translateX(-15%); }
-    50%  { transform: translateX(0%); }
-    85%  { transform: translateX(0%); }
-    100% { transform: translateX(-115%); }
+  @keyframes frameSlideIn {
+    0%   { transform: translateX(140%); }
+    100% { transform: translateX(0%); }
   }
-  .photo-cover.sweeping {
-    animation: coverSweep 1.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  /* Old frame fades slightly while the new one slides over it */
+  .photo-frame.frame-exit {
+    animation: frameFadeOut 0.9s ease forwards;
+  }
+  @keyframes frameFadeOut {
+    0%   { opacity: 1; }
+    100% { opacity: 0.35; }
   }
 
   .info-wrap {
@@ -334,7 +344,6 @@
     <div class="photo-wrap">
       <div class="photo-frame">
         <img src="{{ s.photo }}" alt="{{ s.name }}" loading="lazy">
-        <div class="photo-cover"></div>
       </div>
     </div>
     <div class="info-wrap">
@@ -372,32 +381,57 @@
     const oldSlide = slides[current];
     const newSlide = slides[newIndex];
 
-    oldSlide.classList.remove('visible');
+    spotlight.style.opacity = (newIndex === 0) ? '1' : '0';
+    counter.textContent = (newIndex + 1) + ' / ' + total;
 
-    setTimeout(() => {
-      oldSlide.classList.remove('active');
-      newSlide.classList.add('active');
-      // force reflow so the transition applies
-      void newSlide.offsetWidth;
-      newSlide.classList.add('visible');
+    const oldFrame = oldSlide.querySelector('.photo-frame');
+    const newFrame = newSlide.querySelector('.photo-frame');
+    const newInfo = newSlide.querySelector('.info-wrap');
 
-      spotlight.style.opacity = (newIndex === 0) ? '1' : '0';
-      counter.textContent = (newIndex + 1) + ' / ' + total;
-      current = newIndex;
+    // For the title slide (no photo-frame) fall back to a simple cross-fade
+    if (!oldFrame || !newFrame) {
+      oldSlide.classList.remove('visible');
+      setTimeout(() => {
+        oldSlide.classList.remove('active');
+        newSlide.classList.add('active');
+        void newSlide.offsetWidth;
+        newSlide.classList.add('visible');
+        current = newIndex;
+        setTimeout(() => { animating = false; }, 600);
+      }, 550);
+      return;
+    }
 
-      // Trigger the black cover sweep over the new slide's photo, if present
-      const cover = newSlide.querySelector('.photo-cover');
-      if (cover) {
-        cover.classList.remove('sweeping');
-        void cover.offsetWidth; // reflow
-        cover.classList.add('sweeping');
-        cover.addEventListener('animationend', () => {
-          cover.classList.remove('sweeping');
-        }, { once: true });
+    // Stack both slides: old slide stays put, new slide sits on top
+    oldSlide.classList.add('active', 'visible', 'outgoing');
+    newSlide.classList.add('active', 'visible', 'incoming');
+
+    // Prep animation classes
+    void newFrame.offsetWidth;
+    newFrame.classList.add('frame-enter');
+    oldFrame.classList.add('frame-exit');
+
+    const onFrameDone = () => {
+      newFrame.removeEventListener('animationend', onFrameDone);
+
+      // Reveal new slide's text info now that the frame has covered the old one
+      if (newInfo) {
+        void newInfo.offsetWidth;
+        newInfo.classList.add('info-reveal');
       }
 
-      setTimeout(() => { animating = false; }, 600);
-    }, 550);
+      // Clean up old slide and animation classes
+      oldSlide.classList.remove('active', 'visible', 'outgoing');
+      oldFrame.classList.remove('frame-exit');
+      newFrame.classList.remove('frame-enter');
+      newSlide.classList.remove('incoming');
+      newSlide.classList.add('active', 'visible');
+
+      current = newIndex;
+      setTimeout(() => { animating = false; }, 150);
+    };
+
+    newFrame.addEventListener('animationend', onFrameDone);
   }
 
   function next() { showSlide((current + 1) % total); }
