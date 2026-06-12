@@ -284,7 +284,7 @@ STUDENTS = [
         "name": "Nydeliz Dariels Torres",
         "photo": "https://cdn.discordapp.com/attachments/1460818048654246043/1514746031798091796/0461D9FE-64A7-4B35-B141-9AAFCEB52C1C.png?ex=6a2c7cac&is=6a2b2b2c&hm=df499cc9b0c2d30a585aa35e88cbb0e59d47b0a5cba56e3ab7d5308b4e31344b&",
         "school": "Eli Whitney",
-        "description": "To be added..."
+        "description": "you cant be stuck on the past when your future is bright."
     },
       {
         "name": "Caeli Love Tran Hamilton",
