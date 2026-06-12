@@ -144,7 +144,7 @@ STUDENTS = [
     },
       {
         "name": "Raima Kalampai",
-        "photo": "/static/photos/student3.jpg",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721756758_1318026190506020_3639808467011350954_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=y7YPHzoyLJsQ7kNvwF6D0JY&_nc_oc=AdrZ3VODqlU-NlspRKr6xih-wbCnl_latlhKX5Dlw0nNB7ciseatIQlN7cD9mM2qZ0k2l3SnK0T_3Hl1sJm55t2x&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gH43JwisgCN29NdjPl5YljJIEj_LqURANaeN7GksboaZQ&oe=6A312B25&ig_cache_key=MTMxODAyNjE4NzE3MjY4Nw%3D%3D.2-ccb7-5.f",
         "school": "CAREER",
         "description": "To be added..."
     },
