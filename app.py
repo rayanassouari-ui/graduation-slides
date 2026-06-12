@@ -24,7 +24,7 @@ app = Flask(__name__)
 STUDENTS = [
     {
         "name": "Joel Emiliano Almeida Figueiras",
-        "photo": "/static/photos/student1.jpg",
+        "photo": "/static/photos/202379ph.jpg",
         "school": "Wilbur Cross",
         "description": "To be added.."
     },
