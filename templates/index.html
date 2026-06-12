@@ -113,6 +113,12 @@
     opacity: 1;
     z-index: 2;
   }
+  .slide.outgoing .info-wrap {
+    transition: opacity 0.35s ease;
+  }
+  .slide.outgoing .info-wrap.info-fade {
+    opacity: 0;
+  }
 
   /* Title slide */
   .slide-title {
@@ -200,21 +206,26 @@
     display: block;
     filter: saturate(1.02);
   }
-  /* The new frame slides in from the right and overrides the old one */
+  /* The new frame starts hidden directly behind the old one, slides out to
+     the right (emerging from behind), then slides back left to cover it */
   .photo-frame.frame-enter {
-    z-index: 3;
-    animation: frameSlideIn 0.9s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    z-index: 0;
+    animation: frameEmergeCover 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   }
-  @keyframes frameSlideIn {
-    0%   { transform: translateX(140%); }
-    100% { transform: translateX(0%); }
+  @keyframes frameEmergeCover {
+    0%   { transform: translateX(0%) scale(0.94); z-index: 0; }
+    8%   { z-index: 0; }
+    9%   { z-index: 3; }
+    45%  { transform: translateX(55%) scale(0.94); z-index: 3; }
+    100% { transform: translateX(0%) scale(1); z-index: 3; }
   }
-  /* Old frame fades slightly while the new one slides over it */
+  /* Old frame stays put underneath, fading slightly once covered */
   .photo-frame.frame-exit {
-    animation: frameFadeOut 0.9s ease forwards;
+    animation: frameFadeOut 1.2s ease forwards;
   }
   @keyframes frameFadeOut {
     0%   { opacity: 1; }
+    55%  { opacity: 1; }
     100% { opacity: 0.35; }
   }
 
@@ -406,10 +417,18 @@
     oldSlide.classList.add('active', 'visible', 'outgoing');
     newSlide.classList.add('active', 'visible', 'incoming');
 
+    const oldInfo = oldSlide.querySelector('.info-wrap');
+
     // Prep animation classes
     void newFrame.offsetWidth;
     newFrame.classList.add('frame-enter');
     oldFrame.classList.add('frame-exit');
+
+    // Fade out the old text right away so it doesn't overlap the new content
+    if (oldInfo) {
+      void oldInfo.offsetWidth;
+      oldInfo.classList.add('info-fade');
+    }
 
     const onFrameDone = () => {
       newFrame.removeEventListener('animationend', onFrameDone);
@@ -422,6 +441,7 @@
 
       // Clean up old slide and animation classes
       oldSlide.classList.remove('active', 'visible', 'outgoing');
+      if (oldInfo) oldInfo.classList.remove('info-fade');
       oldFrame.classList.remove('frame-exit');
       newFrame.classList.remove('frame-enter');
       newSlide.classList.remove('incoming');
