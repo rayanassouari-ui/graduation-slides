@@ -113,6 +113,12 @@ STUDENTS = [
         "description": "To be added..."
     },
      {
+        "name": "Zackary Cody Franklin",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HillHOUSE",
+        "description": ""
+    },
+     {
         "name": "Leanna Fuster",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/714023130_1563359182066744_1274354215665151834_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=zqMO2z8k3HcQ7kNvwH-WLUQ&_nc_oc=Adr0eONZzfmb4se9xnJRgc10nlM-ZC6Fh6i5nCP9jNzUg6NrAnqwBzyrxVYbAQmAJeo2QybwE3S7vzmzqV1ahaGp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gH8_F330itfvSq4-TCPISRnNC0PNPVy0wafA9wj_qbmcA&oe=6A52A225",
         "school": "Wilbur Cross",
