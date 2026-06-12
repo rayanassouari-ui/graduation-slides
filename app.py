@@ -250,6 +250,12 @@ STUDENTS = [
         "school": "HILLHOUSE",
         "description": "To be added..."
     },
+    {
+        "name": "Steven Santos",
+        "photo": "/static/photos/student3.jpg",
+        "school": "HILLHOUSE",
+        "description": ""
+    },
      {
         "name": "Juan Rafael Scruggs",
         "photo": "/static/photos/student3.jpg",
