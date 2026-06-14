@@ -49,7 +49,7 @@ STUDENTS = [
      {
         "name": "Ahmad Amirzai",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_6883893978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=eTaKXsGIyNAQ7kNvwEKimov&_nc_oc=AdpORqkQpSaVDbcbrmpq25VwZHrRJ9yl7_3y_ftl1s9GZ117WbqM91L4BZXqtwmN5BbP0WO2qrEBBxOfsTN1ztnV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFKS0QrqWKYLQaCAXuaZPxTzd7hu3wdTHcDKjatAZxKiQ&oe=6A53BD11",
-        "school": "HillHOUSE",
+        "school": "New Haven Academy",
         "description": "To be added..."
     },
     {
