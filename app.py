@@ -10,6 +10,7 @@ Run locally:
 Then open http://localhost:5000
 """
 
+
 from flask import Flask, render_template
 import os
 
@@ -181,13 +182,13 @@ STUDENTS = [
     {
         "name": "Jeziel A Martinez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717128929_1303530098658899_660310397688010469_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=C-P1Jk0KI6sQ7kNvwFibVOl&_nc_oc=Ado4uqRIKGhlpgwL6wbGiiwAjPyCliDNN7rNPaBO712R6jSjTlLadL7S11Da-8KRrctMSRURb_ZwAaNHmmVLzFoa&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gHycjj4ufHrtaqs6yp8KEUGu2Ovql7LRUD0a8LDjMQtVg&oe=6A559AD5",
-        "school": "WILBUR CROSS",
+        "school": "ELI WHITNEY",
         "description": "To be added..."
     },
      {
         "name": "Matthew Muniz",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718979974_1684756596108544_3721482075968536841_n.png?_nc_cat=106&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=UB_GZLZBb5MQ7kNvwHT6iOP&_nc_oc=Ado8I0MtyV4jtjG5Nme5wxLOls5WIBkKbXMOevChk9zpBuOZVUjnuei-empvdYiP2Pq_seDTBMvw4mgdRQxZ646w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEM0RagCYdHgPkbIhpY4piS6gZUOSUimCxRW4nkdY9T6Q&oe=6A53CED2",
-        "school": "HILLHOUSE",
+        "school": "ELI WHITNEY",
         "description": "To be added..."
     },
      {
