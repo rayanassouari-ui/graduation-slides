@@ -27,7 +27,7 @@ STUDENTS = [
         "name": "Bibi Zahra Adnan",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719873420_1751813175814242_721287650445145070_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=12eto75BHuwQ7kNvwFzAnmI&_nc_oc=Adojdp4VWJRCKkLAZvD6uSb3XONIJgaa25ygYHvqlwojMqf7hToyrPGHefYLwWtvPF4_oJB2xHZPf2fOufOGka8L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHgpaUAI5_fl6f_Zna2HtE7CO5EmXmIEkYqt56vB8F8Gg&oe=6A53D034",
         "school": "HillHOUSE",
-        "description": ""
+        "description": "Did I make it though?"
     },
     {
         "name": "Joel Emiliano Almeida Figueiras",
@@ -45,7 +45,7 @@ STUDENTS = [
         "name": "Iliana Arocho",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/723130008_27490694547222673_1950729644942787669_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=z2XGJJqm4EcQ7kNvwGvmVtU&_nc_oc=Adql_otsLppi5eJ_ixGXexXg3kRJtbkH0wvLQvfk-kqpxP2V1huPf0QmjHf3SAhY1-jGck4x4UPIoXIPPpw7Htgn&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHfEcfocyP4J09-45w4KUwLM3ssyfKPzN4wp5aYvf03kQ&oe=6A53F0FC",
         "school": "High School in the Community",
-        "description": "To be added..."
+        "description": "8 years & 4 more to go."
     },
      {
         "name": "Ahmad Amirzai",
@@ -63,7 +63,7 @@ STUDENTS = [
         "name": "Yeimy Carisa Barreda",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718611306_1219489486853853_3296595231098137329_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Ad2xQ22sdWIQ7kNvwE_tTg5&_nc_oc=AdpQTyHxfRO_GOZi84iQzOfCBwv7X3Rhr09bRLewryQDex1Rm5THCgiCV0NLRO7cVz3x5WZqWasm_XE9zQ55_1jp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGPZgMPOptfm9c-06Bt7Uy15MlTS0PGkVQ9hjkf-4qIbw&oe=6A53E3D2",
         "school": "Wilbur Cross",
-        "description": "To be added..."
+        "description": "8 years of memory & 4 more to complete."
     },
        {
         "name": "Aisake Levon Brandon",
@@ -93,7 +93,7 @@ STUDENTS = [
         "name": "Nagedlie Sofia David",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721800999_1474204477792422_4649749474273231732_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=2UEMmWGHYicQ7kNvwEzCmdb&_nc_oc=AdrSzZRQhGIdZh8V91rZfmkD7E68aW8-ODbJb9MQcoIk1Lhu3huDg-PWqnE_tSujLfLnCcIeWrFQcebXaifIGuiE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHhgDYPPvt7cVIxmRuB52zZVUcXdZSXlBnYO-ln1n4QXg&oe=6A559048",
         "school": "HillHOUSE",
-        "description": "To be added..."
+        "description": "Mientras uno este vivo, uno debe amar lo maz que pueda."
     },
     {
         "name": "Jareliz Dejesus Gonzalez",
@@ -183,7 +183,7 @@ STUDENTS = [
         "name": "Jeziel A Martinez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717128929_1303530098658899_660310397688010469_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=C-P1Jk0KI6sQ7kNvwFibVOl&_nc_oc=Ado4uqRIKGhlpgwL6wbGiiwAjPyCliDNN7rNPaBO712R6jSjTlLadL7S11Da-8KRrctMSRURb_ZwAaNHmmVLzFoa&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gHycjj4ufHrtaqs6yp8KEUGu2Ovql7LRUD0a8LDjMQtVg&oe=6A559AD5",
         "school": "ELI WHITNEY",
-        "description": "To be added..."
+        "description": "Only the fearless can be great"
     },
      {
         "name": "Matthew Muniz",
