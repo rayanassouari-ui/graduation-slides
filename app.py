@@ -48,7 +48,7 @@ STUDENTS = [
     },
       {
         "name": "Yeimy Carisa Barreda",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718611306_1219489486853853_3296595231098137329_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Ad2xQ22sdWIQ7kNvwE_tTg5&_nc_oc=AdpQTyHxfRO_GOZi84iQzOfCBwv7X3Rhr09bRLewryQDex1Rm5THCgiCV0NLRO7cVz3x5WZqWasm_XE9zQ55_1jp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGPZgMPOptfm9c-06Bt7Uy15MlTS0PGkVQ9hjkf-4qIbw&oe=6A53E3D2",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722131101_1566682838498389_9155670449635255782_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=HMAtWg4_1K4Q7kNvwF0VTpt&_nc_oc=AdrygdVu8NtfKjag78qGoraxfnvn5xjPtF6gy_M-NOYOuCviALgtx9zflX6mBkNoAwmirdxlNPK2tryMpuELkQJY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHsQyikpM1CK5jcORCtKWCmCqIO3DopLR-f8ASu3QdBvA&oe=6A594436",
         "school": "Wilbur Cross",
         "description": "8 years of memory & 4 more to complete."
     },
