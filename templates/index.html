@@ -3,784 +3,479 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Presentation of Graduates — Class of 2025</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<title>Presentation of Graduates</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
 <style>
-
-/* ============================================================
-   RESET & BASE
-   ============================================================ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body {
-  width: 100%; height: 100%;
-  overflow: hidden;
-  background: #080f0e;
-}
-
-/* ============================================================
-   STAGE
-   ============================================================ */
-.stage {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: radial-gradient(ellipse 80% 100% at 30% 50%, #152622 0%, #0c1a17 50%, #060d0b 100%);
-  font-family: 'EB Garamond', Georgia, serif;
-  color: #e8e2d0;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* ============================================================
-   AMBIENT TEXTURE
-   ============================================================ */
-.grain {
-  position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0.025;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-}
-
-.vignette {
-  position: absolute; inset: 0; pointer-events: none; z-index: 2;
-  background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 55%, rgba(4,9,8,0.65) 100%);
-}
-
-/* ============================================================
-   CORNER ORNAMENTS
-   ============================================================ */
-.corner {
-  position: absolute; pointer-events: none; z-index: 5;
-  width: clamp(80px, 10vw, 160px);
-  height: clamp(80px, 10vw, 160px);
-}
-.corner svg { width: 100%; height: 100%; }
-.corner-tl { top: 0; left: 0; }
-.corner-tr { top: 0; right: 0; transform: scaleX(-1); }
-.corner-bl { bottom: 0; left: 0; transform: scaleY(-1); }
-.corner-br { bottom: 0; right: 0; transform: scale(-1); }
-
-/* ============================================================
-   SLIDE SYSTEM
-   ============================================================ */
-.slide {
-  position: absolute; inset: 0;
-  display: none; opacity: 0;
-  transition: opacity 0.7s ease;
-  z-index: 3;
-}
-.slide.active  { display: flex; align-items: stretch; }
-.slide.visible { opacity: 1; }
-
-/* ============================================================
-   TITLE SLIDE
-   ============================================================ */
-.slide-title {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 0;
-}
-
-.title-eyebrow {
-  font-size: clamp(0.65rem, 1.1vw, 0.85rem);
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: #7aaa9a;
-  margin-bottom: clamp(20px, 3vh, 36px);
-  font-family: 'EB Garamond', serif;
-}
-
-.title-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  color: #f0c84a;
-  font-size: clamp(2.8rem, 7.5vw, 7rem);
-  letter-spacing: 0.10em;
-  line-height: 1.08;
-  text-shadow: 0 0 80px rgba(240,200,74,0.12);
-}
-.title-h1 span { display: block; }
-.title-h1 .word-of {
-  font-style: italic;
-  font-weight: 700;
-  font-size: clamp(1.8rem, 5vw, 4.8rem);
-  color: #c9a636;
-  letter-spacing: 0.08em;
-}
-
-.title-ornament {
-  display: flex; align-items: center; gap: 16px;
-  margin: clamp(22px, 3.5vh, 44px) auto;
-  width: min(500px, 72vw);
-}
-.title-ornament .ln {
-  flex: 1; height: 1px;
-  background: linear-gradient(to right, transparent, #f0c84a88, #f0c84a, #f0c84a88, transparent);
-}
-.title-ornament .dmnd {
-  width: 10px; height: 10px;
-  background: #f0c84a; transform: rotate(45deg); flex-shrink: 0;
-}
-.title-ornament .dmnd-sm {
-  width: 5px; height: 5px;
-  background: #c9a636; transform: rotate(45deg); flex-shrink: 0;
-}
-
-.title-year {
-  font-size: clamp(1rem, 2.2vw, 1.7rem);
-  letter-spacing: 0.22em;
-  color: #c8d0c4;
-  font-variant-numeric: oldstyle-nums;
-}
-
-.title-institution {
-  margin-top: clamp(10px, 1.8vh, 20px);
-  font-size: clamp(0.75rem, 1vw, 0.95rem);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #4a7060;
-}
-
-/* ============================================================
-   STUDENT SLIDE
-   ============================================================ */
-.slide-student { flex-direction: row; }
-
-/* ---- Photo Pane ---- */
-.photo-pane {
-  flex: 0 0 42%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.photo-pane::before {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(100deg, rgba(6,13,11,0.55) 0%, rgba(6,13,11,0.1) 100%);
-  z-index: 1; pointer-events: none;
-}
-
-/* Vertical gold seam between panes */
-.photo-pane::after {
-  content: "";
-  position: absolute; top: 8%; right: 0; bottom: 8%;
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, #f0c84a55, #f0c84aaa, #f0c84a55, transparent);
-  z-index: 4;
-}
-
-.frame-wrap {
-  position: relative;
-  width: min(58%, 290px);
-  z-index: 2;
-}
-
-/* Outer decorative border */
-.frame-wrap::before {
-  content: "";
-  position: absolute;
-  inset: -14px;
-  border: 1px solid #f0c84a28;
-  pointer-events: none;
-}
-/* Inner accent border */
-.frame-wrap::after {
-  content: "";
-  position: absolute;
-  inset: -7px;
-  border: 1px solid #f0c84a50;
-  pointer-events: none;
-}
-
-.photo-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  border: 2px solid #f0c84a;
-  overflow: hidden;
-  box-shadow:
-    0 0 0 8px rgba(240,200,74,0.05),
-    0 30px 70px rgba(0,0,0,0.6),
-    0 0 40px rgba(240,200,74,0.07);
-}
-
-.photo-frame img {
-  width: 100%; height: 100%;
-  object-fit: cover; display: block;
-  filter: sepia(8%) contrast(1.04) brightness(0.97);
-}
-
-.photo-frame .photo-fade {
-  position: absolute; bottom: 0; left: 0; right: 0; height: 35%;
-  background: linear-gradient(to top, rgba(6,13,11,0.82), transparent);
-  pointer-events: none;
-}
-
-.graduate-num {
-  position: absolute;
-  bottom: -2px; left: 50%; transform: translateX(-50%);
-  background: #f0c84a;
-  color: #0a1210;
-  font-family: 'Playfair Display', serif;
-  font-size: 0.65rem; font-weight: 700;
-  letter-spacing: 0.16em;
-  padding: 5px 22px;
-  white-space: nowrap;
-  z-index: 3;
-}
-
-/* ---- Info Pane ---- */
-.info-pane {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(28px, 5vh, 70px) clamp(32px, 6vw, 80px) clamp(28px, 5vh, 70px) clamp(24px, 4vw, 56px);
-  min-width: 0;
-  position: relative;
-}
-
-.info-eyebrow {
-  display: flex; align-items: center; gap: 12px;
-  font-size: clamp(0.65rem, 0.9vw, 0.78rem);
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: #7aaa9a;
-  margin-bottom: clamp(14px, 2.2vh, 26px);
-}
-.info-eyebrow::before {
-  content: "";
-  width: 32px; height: 1px;
-  background: #7aaa9a; flex-shrink: 0;
-}
-
-.info-name {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #f0c84a;
-  font-size: clamp(2rem, 4.2vw, 3.6rem);
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  word-break: break-word;
-  hyphens: auto;
-}
-
-.info-divider {
-  display: flex; align-items: center; gap: 14px;
-  margin: clamp(16px, 2.5vh, 28px) 0 clamp(12px, 2vh, 22px);
-  max-width: 380px;
-}
-.info-divider .ln {
-  flex: 1; height: 1px;
-  background: linear-gradient(to right, #f0c84a88, transparent);
-}
-.info-divider .dmnd {
-  width: 8px; height: 8px;
-  background: #f0c84a; transform: rotate(45deg); flex-shrink: 0;
-}
-
-.info-school {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-  color: #a8c4bc;
-  letter-spacing: 0.05em;
-  margin-bottom: clamp(14px, 2.2vh, 24px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.info-degree {
-  font-size: clamp(0.7rem, 0.95vw, 0.85rem);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #4f7a6e;
-  margin-bottom: clamp(16px, 2.5vh, 28px);
-}
-
-.info-desc {
-  font-size: clamp(1rem, 1.3vw, 1.18rem);
-  line-height: 1.78;
-  color: #8aada4;
-  max-width: min(520px, 92%);
-}
-
-.info-honors {
-  margin-top: clamp(18px, 2.8vh, 32px);
-  display: flex; align-items: center; gap: 10px;
-  font-size: clamp(0.7rem, 0.9vw, 0.82rem);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #f0c84a;
-  opacity: 0.75;
-}
-.info-honors::before {
-  content: "✦";
-  font-size: 0.65rem;
-}
-
-/* ============================================================
-   ANIMATIONS
-   ============================================================ */
-.frame-wrap.frame-enter {
-  animation: frameSlideIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-.frame-wrap.frame-exit {
-  animation: frameSlideOut 0.45s cubic-bezier(0.4, 0, 1, 1) forwards;
-}
-@keyframes frameSlideIn {
-  0%   { transform: translateX(-24px) scale(0.96); opacity: 0; }
-  100% { transform: translateX(0)     scale(1);    opacity: 1; }
-}
-@keyframes frameSlideOut {
-  0%   { transform: translateX(0)    scale(1);    opacity: 1; }
-  100% { transform: translateX(24px) scale(0.96); opacity: 0; }
-}
-
-.info-pane.info-enter {
-  animation: infoRise 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-.info-pane.info-exit {
-  animation: infoFall 0.35s ease forwards;
-}
-@keyframes infoRise {
-  0%   { transform: translateY(18px); opacity: 0; }
-  100% { transform: translateY(0);    opacity: 1; }
-}
-@keyframes infoFall {
-  0%   { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(-10px); }
-}
-
-/* ============================================================
-   FLASH OVERLAY
-   ============================================================ */
-.flash-overlay {
-  position: absolute; inset: 0;
-  background: rgba(240,200,74,0.04);
-  opacity: 0; pointer-events: none; z-index: 6;
-  transition: opacity 0.3s ease;
-}
-.flash-overlay.flash { opacity: 1; }
-
-/* ============================================================
-   PROGRESS BAR
-   ============================================================ */
-.progress-bar {
-  position: absolute; bottom: 0; left: 0;
-  height: 2px;
-  background: linear-gradient(to right, #f0c84a44, #f0c84a);
-  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  z-index: 10; pointer-events: none;
-}
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-.footer {
-  position: absolute; bottom: 16px; left: 28px; right: 28px;
-  display: flex; justify-content: space-between; align-items: center;
-  font-size: clamp(0.6rem, 0.85vw, 0.76rem);
-  letter-spacing: 0.14em;
-  color: #304e47;
-  pointer-events: none; z-index: 10;
-  text-transform: uppercase;
-}
-
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media (max-width: 680px) {
-  .slide-student { flex-direction: column; }
-  .photo-pane {
-    flex: 0 0 44%;
-    max-width: 100%;
+  :root {
+    --bg-color: #1f2e2e;
+    --bg-color-2: #16221f;
+    --gold: #f0c84a;
+    --white: #f5f5f0;
+    --subtext: #d8d8cf;
   }
-  .photo-pane::after { display: none; }
-  .frame-wrap { width: min(52vw, 200px); }
-  .info-pane { padding: 20px 24px; }
-  .info-desc { max-width: 100%; }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .frame-wrap.frame-enter,
-  .frame-wrap.frame-exit,
-  .info-pane.info-enter,
-  .info-pane.info-exit { animation: none !important; }
-  .slide { transition: opacity 0.3s ease !important; }
-}
+  * { box-sizing: border-box; }
 
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color-2) 100%);
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--white);
+    user-select: none;
+  }
+
+  .stage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  /* ---------- Chevron decorations ---------- */
+  .chevron {
+    position: absolute;
+    pointer-events: none;
+  }
+  .chevron svg { display: block; width: 100%; height: 100%; }
+  .chevron-tr {
+    top: -6vmin;
+    right: -6vmin;
+    width: 32vmin;
+    height: 32vmin;
+  }
+  .chevron-bl {
+    bottom: -6vmin;
+    left: -6vmin;
+    width: 28vmin;
+    height: 28vmin;
+    transform: rotate(180deg);
+  }
+  .chevron-r {
+    top: 35%;
+    right: -2vmin;
+    width: 8vmin;
+    height: 12vmin;
+  }
+  .chevron-l {
+    top: 45%;
+    left: -2vmin;
+    width: 8vmin;
+    height: 12vmin;
+    transform: rotate(180deg);
+  }
+
+  /* spotlight glow for title slide */
+  .spotlight {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: 60vh;
+    background: radial-gradient(ellipse at top, rgba(58,79,79,0.55) 0%, rgba(58,79,79,0) 70%);
+    clip-path: polygon(35% 0%, 65% 0%, 58% 100%, 42% 100%);
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+  }
+
+  /* ---------- Slides ---------- */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.55s ease;
+  }
+  .slide.active {
+    display: flex;
+  }
+  .slide.visible {
+    opacity: 1;
+  }
+  .slide.incoming {
+    display: flex;
+    opacity: 1;
+    z-index: 4;
+  }
+  .slide.incoming .info-wrap {
+    opacity: 0;
+  }
+  .slide.incoming .info-wrap.info-reveal {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .slide.outgoing {
+    display: flex;
+    opacity: 1;
+    z-index: 2;
+  }
+  .slide.outgoing .info-wrap {
+    transition: opacity 0.35s ease;
+  }
+  .slide.outgoing .info-wrap.info-fade {
+    opacity: 0;
+  }
+
+  /* Title slide */
+  .slide-title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .slide-title h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    color: var(--gold);
+    font-size: clamp(2.2rem, 6.5vw, 5.2rem);
+    letter-spacing: 0.08em;
+    margin: 0;
+    line-height: 1.15;
+    text-shadow: 0 0 24px rgba(240,200,74,0.25);
+  }
+  .title-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0 18px;
+    width: min(60vw, 520px);
+  }
+  .title-divider .line {
+    flex: 1;
+    height: 2px;
+    background: var(--gold);
+  }
+  .title-divider .diamond {
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+  .slide-title .subtitle {
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+
+  /* Student slide */
+  .slide-student {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .photo-wrap {
+    position: relative;
+    flex: 0 0 38%;
+    max-width: 38%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1200px;
+  }
+  .photo-frame {
+    position: relative;
+    width: min(60%, 320px);
+    aspect-ratio: 3 / 4;
+    border: 3px solid var(--gold);
+    padding: 10px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: 0 0 0 1px rgba(240,200,74,0.25), 0 18px 40px rgba(0,0,0,0.45);
+    overflow: hidden;
+    z-index: 1;
+  }
+  .photo-frame::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    height: 3px;
+    background: var(--gold);
+    z-index: 1;
+  }
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(1.02);
+  }
+  /* The new frame starts fully hidden directly behind the old one, then
+     fades/pops into view as it slides out to the right (emerging from
+     behind), then slides back left to cover the old frame */
+  .photo-frame.frame-enter {
+    z-index: 0;
+    opacity: 0;
+    animation: frameEmergeCover 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+  @keyframes frameEmergeCover {
+    0%   { transform: translateX(0%) scale(0.94); opacity: 0; z-index: 0; }
+    8%   { opacity: 0; z-index: 0; }
+    9%   { z-index: 3; }
+    18%  { opacity: 1; }
+    45%  { transform: translateX(55%) scale(0.94); opacity: 1; z-index: 3; }
+    100% { transform: translateX(0%) scale(1); opacity: 1; z-index: 3; }
+  }
+  /* Old frame stays put underneath, fading slightly once covered */
+  .photo-frame.frame-exit {
+    animation: frameFadeOut 1.2s ease forwards;
+  }
+  @keyframes frameFadeOut {
+    0%   { opacity: 1; }
+    55%  { opacity: 1; }
+    100% { opacity: 0.35; }
+  }
+
+  .info-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4vh 6vw;
+    min-width: 0;
+  }
+  .info-wrap h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: var(--gold);
+    font-size: clamp(1.8rem, 4.5vw, 3.4rem);
+    line-height: 1.15;
+    margin: 0;
+    letter-spacing: 0.04em;
+    word-break: break-word;
+  }
+  .name-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 22px 0 18px;
+    max-width: 90%;
+  }
+  .name-divider .line {
+    flex: 1;
+    height: 2px;
+    background: var(--gold);
+  }
+  .name-divider .diamond {
+    width: 11px;
+    height: 11px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+  .school {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin: 0 0 24px;
+    text-transform: uppercase;
+  }
+  .description {
+    font-size: clamp(0.95rem, 1.4vw, 1.25rem);
+    color: var(--subtext);
+    max-width: 85%;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    position: absolute;
+    bottom: 18px;
+    left: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--subtext);
+    letter-spacing: 0.04em;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  @media (max-width: 760px) {
+    .slide-student { flex-direction: column; }
+    .photo-wrap { flex: 0 0 42%; max-width: 100%; height: 42%; }
+    .photo-frame { width: min(55vw, 260px); }
+    .info-wrap { padding: 3vh 6vw; }
+    .description { max-width: 100%; }
+    .name-divider, .description { max-width: 100%; }
+  }
 </style>
 </head>
 <body>
 
 <div class="stage" id="stage">
 
-  <!-- Ambient texture layers -->
-  <div class="grain"></div>
-  <div class="vignette"></div>
-  <div class="flash-overlay" id="flashEl"></div>
-
-  <!-- Corner ornaments -->
-  <div class="corner corner-tl">
-    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="8" y="8" width="10" height="10" fill="#f0c84a" opacity="0.9"/>
-      <line x1="8" y1="8" x2="8" y2="90" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="8" y1="8" x2="90" y2="8" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="20" y1="20" x2="20" y2="75" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
-      <line x1="20" y1="20" x2="75" y2="20" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
-      <line x1="34" y1="34" x2="34" y2="58" stroke="#f0c84a" stroke-width="0.5" opacity="0.25"/>
-      <line x1="34" y1="34" x2="58" y2="34" stroke="#f0c84a" stroke-width="0.5" opacity="0.25"/>
+  <!-- Decorative chevrons -->
+  <div class="chevron chevron-tr">
+    <svg viewBox="0 0 200 200" preserveAspectRatio="none">
+      <polyline points="40,0 100,60 160,0" fill="none" stroke="#f0c84a" stroke-width="4"/>
+      <polyline points="0,30 70,100 140,30" fill="none" stroke="#f0c84a" stroke-width="2.5"/>
     </svg>
   </div>
-  <div class="corner corner-tr">
-    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="8" y="8" width="10" height="10" fill="#f0c84a" opacity="0.9"/>
-      <line x1="8" y1="8" x2="8" y2="90" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="8" y1="8" x2="90" y2="8" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="20" y1="20" x2="20" y2="75" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
-      <line x1="20" y1="20" x2="75" y2="20" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
+  <div class="chevron chevron-bl">
+    <svg viewBox="0 0 200 200" preserveAspectRatio="none">
+      <polyline points="40,0 100,60 160,0" fill="none" stroke="#f0c84a" stroke-width="4"/>
+      <polyline points="0,30 70,100 140,30" fill="none" stroke="#f0c84a" stroke-width="2.5"/>
     </svg>
   </div>
-  <div class="corner corner-bl">
-    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="8" y="8" width="10" height="10" fill="#f0c84a" opacity="0.9"/>
-      <line x1="8" y1="8" x2="8" y2="90" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="8" y1="8" x2="90" y2="8" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="20" y1="20" x2="20" y2="75" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
-      <line x1="20" y1="20" x2="75" y2="20" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
+  <div class="chevron chevron-r">
+    <svg viewBox="0 0 100 150" preserveAspectRatio="none">
+      <polyline points="100,0 0,75 100,150" fill="none" stroke="#f0c84a" stroke-width="4"/>
     </svg>
   </div>
-  <div class="corner corner-br">
-    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="8" y="8" width="10" height="10" fill="#f0c84a" opacity="0.9"/>
-      <line x1="8" y1="8" x2="8" y2="90" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="8" y1="8" x2="90" y2="8" stroke="#f0c84a" stroke-width="1.5"/>
-      <line x1="20" y1="20" x2="20" y2="75" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
-      <line x1="20" y1="20" x2="75" y2="20" stroke="#f0c84a" stroke-width="0.5" opacity="0.4"/>
+  <div class="chevron chevron-l">
+    <svg viewBox="0 0 100 150" preserveAspectRatio="none">
+      <polyline points="100,0 0,75 100,150" fill="none" stroke="#f0c84a" stroke-width="4"/>
     </svg>
   </div>
 
-  <!-- ══════════════════════════════════════════
-       SLIDE 0 — TITLE
-  ══════════════════════════════════════════ -->
+  <div class="spotlight" id="spotlight"></div>
+
+  <!-- Title slide -->
   <div class="slide slide-title active visible" data-index="0">
-    <div class="title-eyebrow">Annual Commencement Ceremony</div>
-    <h1 class="title-h1">
-      <span>Presentation</span>
-      <span class="word-of">of</span>
-      <span>Graduates</span>
-    </h1>
-    <div class="title-ornament">
-      <div class="ln"></div>
-      <div class="dmnd-sm"></div>
-      <div class="dmnd"></div>
-      <div class="dmnd-sm"></div>
-      <div class="ln"></div>
+    <h1>PRESENTATION</h1>
+    <h1>OF GRADUATES</h1>
+    <div class="title-divider">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
     </div>
-    <div class="title-year">Class of 2025</div>
-    <div class="title-institution">Westbrook University · College of Arts &amp; Sciences</div>
+    <div class="subtitle">{{ class_year }}</div>
   </div>
 
-  <!-- ══════════════════════════════════════════
-       SLIDE 1
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="1">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=80" alt="Amara Nwosu">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 01 of 07</div>
+  <!-- Student slides -->
+  {% for s in students %}
+  <div class="slide slide-student" data-index="{{ loop.index }}">
+    <div class="photo-wrap">
+      <div class="photo-frame">
+        <img src="{{ s.photo }}" alt="{{ s.name }}" loading="lazy">
       </div>
     </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">Amara Nwosu</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">School of Biomedical Sciences</div>
-      <div class="info-degree">Bachelor of Science · Biology</div>
-      <p class="info-desc">A first-generation scholar whose research on antibiotic-resistant pathogens earned her a national fellowship and a co-authorship on a peer-reviewed paper before her senior year had even begun.</p>
-      <div class="info-honors">Summa Cum Laude &nbsp;·&nbsp; Dean's Medal</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       SLIDE 2
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="2">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Marcus Rivera">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 02 of 07</div>
+    <div class="info-wrap">
+      <h2>{{ s.name|upper }}</h2>
+      <div class="name-divider">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line"></div>
       </div>
-    </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">Marcus Rivera</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">College of Engineering</div>
-      <div class="info-degree">Bachelor of Science · Computer Engineering</div>
-      <p class="info-desc">Founded the university's open-source robotics lab in his sophomore year. His senior capstone — an adaptive prosthetic hand controlled by surface EMG signals — won the regional IEEE design competition.</p>
-      <div class="info-honors">Magna Cum Laude &nbsp;·&nbsp; Innovation Prize</div>
+      <p class="school">{{ s.school }}</p>
+      <p class="description">{{ s.description }}</p>
     </div>
   </div>
+  {% endfor %}
 
-  <!-- ══════════════════════════════════════════
-       SLIDE 3
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="3">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=600&q=80" alt="Priya Mehta">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 03 of 07</div>
-      </div>
-    </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">Priya Mehta</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">School of Law &amp; Society</div>
-      <div class="info-degree">Bachelor of Arts · Political Science</div>
-      <p class="info-desc">Delivered testimony before the state legislature at nineteen. Led a student coalition that successfully advocated for on-campus mental health reform, directly benefitting over 4,000 enrolled students.</p>
-      <div class="info-honors">Cum Laude &nbsp;·&nbsp; Service Leadership Award</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       SLIDE 4
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="4">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80" alt="Elijah Osei">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 04 of 07</div>
-      </div>
-    </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">Elijah Osei</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">Conservatory of Music</div>
-      <div class="info-degree">Bachelor of Music · Composition</div>
-      <p class="info-desc">His orchestral debut, performed by the City Philharmonic at age twenty, drew standing ovations and a recording contract. Elijah composes at the intersection of West African rhythmic tradition and contemporary chamber music.</p>
-      <div class="info-honors">Summa Cum Laude &nbsp;·&nbsp; Founder's Scholarship</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       SLIDE 5
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="5">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="Sophia Chen">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 05 of 07</div>
-      </div>
-    </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">Sophia Chen</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">School of Architecture</div>
-      <div class="info-degree">Bachelor of Architecture · Urban Design</div>
-      <p class="info-desc">Designed a modular, low-cost housing prototype for flood-prone communities that was shortlisted for the International Young Architect Award. Her thesis reimagines coastal resilience through locally-sourced bamboo construction.</p>
-      <div class="info-honors">Magna Cum Laude &nbsp;·&nbsp; Design Excellence Award</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       SLIDE 6
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="6">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80" alt="James Kowalski">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 06 of 07</div>
-      </div>
-    </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">James Kowalski</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">College of Business</div>
-      <div class="info-degree">Bachelor of Science · Finance &amp; Economics</div>
-      <p class="info-desc">Built a student-run investment fund managing over $200,000 in alumni endowment capital, generating consistent positive returns across four years. Now launching a fintech startup focused on accessible micro-investing for underserved communities.</p>
-      <div class="info-honors">Cum Laude &nbsp;·&nbsp; Entrepreneurship Medal</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════════════
-       SLIDE 7
-  ══════════════════════════════════════════ -->
-  <div class="slide slide-student" data-index="7">
-    <div class="photo-pane">
-      <div class="frame-wrap">
-        <div class="photo-frame">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Lena Vasquez">
-          <div class="photo-fade"></div>
-        </div>
-        <div class="graduate-num">Graduate 07 of 07</div>
-      </div>
-    </div>
-    <div class="info-pane">
-      <div class="info-eyebrow">Graduate</div>
-      <div class="info-name">Lena Vasquez</div>
-      <div class="info-divider"><div class="ln"></div><div class="dmnd"></div></div>
-      <div class="info-school">Department of Visual Arts</div>
-      <div class="info-degree">Bachelor of Fine Arts · Photography &amp; Film</div>
-      <p class="info-desc">Her documentary series on immigrant identity along the US–Mexico border screened at three international film festivals and was acquired by a streaming platform before she walked across this stage. Lena donates all proceeds to border literacy programs.</p>
-      <div class="info-honors">Summa Cum Laude &nbsp;·&nbsp; President's Award</div>
-    </div>
-  </div>
-
-  <!-- Progress + Footer -->
-  <div class="progress-bar" id="progressBar" style="width: 12.5%;"></div>
   <div class="footer">
-    <span>← → arrow keys &nbsp;·&nbsp; click to advance</span>
-    <span id="counter">1 / 8</span>
+    <span>Click / press → for next</span>
+    <span id="counter">1 / {{ students|length + 1 }}</span>
   </div>
 
-</div><!-- .stage -->
+</div>
 
 <script>
-(function () {
-  'use strict';
-
-  const slides     = document.querySelectorAll('.slide');
-  const total      = slides.length;
-  const counter    = document.getElementById('counter');
-  const progressBar = document.getElementById('progressBar');
-  const flashEl    = document.getElementById('flashEl');
-
-  let current   = 0;
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  const spotlight = document.getElementById('spotlight');
+  const counter = document.getElementById('counter');
+  let current = 0;
   let animating = false;
 
-  /* ── helpers ─────────────────────────────── */
-
-  function updateHUD(idx) {
-    counter.textContent = (idx + 1) + ' / ' + total;
-    progressBar.style.width = ((idx + 1) / total * 100) + '%';
-  }
-
-  function triggerFlash() {
-    flashEl.classList.remove('flash');
-    void flashEl.offsetWidth;
-    flashEl.classList.add('flash');
-    setTimeout(() => flashEl.classList.remove('flash'), 300);
-  }
-
-  /* ── transition ───────────────────────────── */
-
-  function showSlide(newIdx) {
-    if (animating || newIdx === current) return;
+  function showSlide(newIndex) {
+    if (animating || newIndex === current) return;
     animating = true;
 
     const oldSlide = slides[current];
-    const newSlide = slides[newIdx];
+    const newSlide = slides[newIndex];
 
-    updateHUD(newIdx);
-    triggerFlash();
+    spotlight.style.opacity = (newIndex === 0) ? '1' : '0';
+    counter.textContent = (newIndex + 1) + ' / ' + total;
 
-    const isTitleOld = oldSlide.classList.contains('slide-title');
-    const isTitleNew = newSlide.classList.contains('slide-title');
+    const oldFrame = oldSlide.querySelector('.photo-frame');
+    const newFrame = newSlide.querySelector('.photo-frame');
+    const newInfo = newSlide.querySelector('.info-wrap');
 
-    /* simple cross-fade when title slide is involved */
-    if (isTitleOld || isTitleNew) {
+    // For the title slide (no photo-frame) fall back to a simple cross-fade
+    if (!oldFrame || !newFrame) {
       oldSlide.classList.remove('visible');
-      setTimeout(function () {
+      setTimeout(() => {
         oldSlide.classList.remove('active');
         newSlide.classList.add('active');
         void newSlide.offsetWidth;
         newSlide.classList.add('visible');
-        current = newIdx;
-        animating = false;
-      }, 700);
+        current = newIndex;
+        setTimeout(() => { animating = false; }, 600);
+      }, 550);
       return;
     }
 
-    /* student → student: three-beat choreography */
-    const oldFrame = oldSlide.querySelector('.frame-wrap');
-    const newFrame = newSlide.querySelector('.frame-wrap');
-    const oldInfo  = oldSlide.querySelector('.info-pane');
-    const newInfo  = newSlide.querySelector('.info-pane');
+    // Stack both slides: old slide stays put, new slide sits on top
+    oldSlide.classList.add('active', 'visible', 'outgoing');
+    newSlide.classList.add('active', 'visible', 'incoming');
 
-    /* beat 1 — exit old info & frame */
-    oldInfo.classList.add('info-exit');
+    const oldInfo = oldSlide.querySelector('.info-wrap');
+
+    // Prep animation classes
+    void newFrame.offsetWidth;
+    newFrame.classList.add('frame-enter');
     oldFrame.classList.add('frame-exit');
 
-    setTimeout(function () {
-      /* beat 2 — show new slide, enter new frame & info */
-      oldSlide.classList.remove('active', 'visible');
-      oldInfo.classList.remove('info-exit');
+    // Fade out the old text right away so it doesn't overlap the new content
+    if (oldInfo) {
+      void oldInfo.offsetWidth;
+      oldInfo.classList.add('info-fade');
+    }
+
+    const onFrameDone = () => {
+      newFrame.removeEventListener('animationend', onFrameDone);
+
+      // Clean up old slide and frame animation classes immediately
+      oldSlide.classList.remove('active', 'visible', 'outgoing');
+      if (oldInfo) oldInfo.classList.remove('info-fade');
       oldFrame.classList.remove('frame-exit');
-
+      newFrame.classList.remove('frame-enter');
       newSlide.classList.add('active', 'visible');
-      void newFrame.offsetWidth;
-      newFrame.classList.add('frame-enter');
-      newInfo.classList.add('info-enter');
 
-      /* beat 3 — clean up animation classes */
-      setTimeout(function () {
-        newFrame.classList.remove('frame-enter');
-        newInfo.classList.remove('info-enter');
-        current = newIdx;
-        animating = false;
-      }, 950);
+      current = newIndex;
 
-    }, 380);
+      // Reveal new slide's text info now that the frame has covered the old one.
+      // Keep the 'incoming' class so the fade-in transition can play, then
+      // clean it up once the transition finishes.
+      if (newInfo) {
+        void newInfo.offsetWidth;
+        newInfo.classList.add('info-reveal');
+        newInfo.addEventListener('transitionend', () => {
+          newSlide.classList.remove('incoming');
+          newInfo.classList.remove('info-reveal');
+        }, { once: true });
+      } else {
+        newSlide.classList.remove('incoming');
+      }
+
+      setTimeout(() => { animating = false; }, 150);
+    };
+
+    newFrame.addEventListener('animationend', onFrameDone);
   }
-
-  /* ── navigation ───────────────────────────── */
 
   function next() { showSlide((current + 1) % total); }
   function prev() { showSlide((current - 1 + total) % total); }
 
   document.getElementById('stage').addEventListener('click', next);
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowRight' || e.code === 'Space') { e.preventDefault(); next(); }
-    if (e.key === 'ArrowLeft')                         { e.preventDefault(); prev(); }
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' || e.key === 'ArrowRight') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft') prev();
   });
 
-  /* touch swipe */
-  let touchX = null;
-  document.getElementById('stage').addEventListener('touchstart', function (e) {
-    touchX = e.changedTouches[0].clientX;
-  }, { passive: true });
-  document.getElementById('stage').addEventListener('touchend', function (e) {
-    if (touchX === null) return;
-    const dx = e.changedTouches[0].clientX - touchX;
-    if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
-    touchX = null;
-  }, { passive: true });
-
-})();
+  // init spotlight state
+  spotlight.style.opacity = (current === 0) ? '1' : '0';
 </script>
 
 </body>
