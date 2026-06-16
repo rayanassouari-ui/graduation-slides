@@ -24,7 +24,7 @@ app = Flask(__name__)
 # ----------------------------------------------------------------------
 STUDENTS = [
         {
-        "name": "Bibi Zahra Adnan",
+        "name": "Zahra Adnan",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719873420_1751813175814242_721287650445145070_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=12eto75BHuwQ7kNvwFzAnmI&_nc_oc=Adojdp4VWJRCKkLAZvD6uSb3XONIJgaa25ygYHvqlwojMqf7hToyrPGHefYLwWtvPF4_oJB2xHZPf2fOufOGka8L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHgpaUAI5_fl6f_Zna2HtE7CO5EmXmIEkYqt56vB8F8Gg&oe=6A53D034",
         "school": "HillHOUSE",
         "description": "Did I make it though?"
@@ -49,9 +49,9 @@ STUDENTS = [
     },
      {
         "name": "Ahmad Amirzai",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_6883893978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=eTaKXsGIyNAQ7kNvwEKimov&_nc_oc=AdpORqkQpSaVDbcbrmpq25VwZHrRJ9yl7_3y_ftl1s9GZ117WbqM91L4BZXqtwmN5BbP0WO2qrEBBxOfsTN1ztnV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFKS0QrqWKYLQaCAXuaZPxTzd7hu3wdTHcDKjatAZxKiQ&oe=6A53BD11",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_688389Lui3978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=eTaKXsGIyNAQ7kNvwEKimov&_nc_oc=AdpORqkQpSaVDbcbrmpq25VwZHrRJ9yl7_3y_ftl1s9GZ117WbqM91L4BZXqtwmN5BbP0WO2qrEBBxOfsTN1ztnV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFKS0QrqWKYLQaCAXuaZPxTzd7hu3wdTHcDKjatAZxKiQ&oe=6A53BD11",
         "school": "New Haven Academy",
-        "description": "To be added..."
+        "description": ""
     },
     {
         "name": "Rayan Assouari",
@@ -98,7 +98,7 @@ STUDENTS = [
     {
         "name": "Jareliz Dejesus Gonzalez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722383784_27822876327304411_1852822208861624548_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=pVUyj5w_gOYQ7kNvwFzmCHh&_nc_oc=AdrCO7tt8P5Apd7j2FMKNTDINKWJp78uotHwwDRLosw6ZaqjPfFuvvvtbEa0fau5Y00VLp8QL8DawclJ2gCiAcN4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEObSO2xmQW1vIObSOgkzdZyukmhXT2R_Z8AhlEalRGnw&oe=6A55A4E4",
-        "school": "HillHOUSE",
+        "school": "ELI WHITNEY",
         "description": "To be added..."
     },
     {
@@ -132,15 +132,15 @@ STUDENTS = [
         "description": "To be added..."
     },
      {
-        "name": "Destiny Lauren Gibbs",
+        "name": "Destiny Gibbs",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721041082_1774132640242414_7779091490562396426_n.png?_nc_cat=103&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=KE5NyXxL3O4Q7kNvwEGrYRa&_nc_oc=AdpZoVb8x0bnjKF_fzJka1aEtFTNU2t1ErgnPlJT2prVLqR__UPnZrnFxeNWCrt8MMOuuRWimVER3uOErrFFKBD2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEblg4-BV0C6uDex7TiRpFghAobjLEon0lPiAlKix0NKg&oe=6A559D54",
-        "school": "HillHOUSE",
+        "school": "ELI WHITNEY",
         "description": "To be added..."
     },
       {
         "name": "Abel Yamil Gonzalez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/724122968_1022562240180511_4881765402960083635_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NROkLqzBMy8Q7kNvwGHRfNA&_nc_oc=AdrUPI5CVPAPqw3MiPmCAaooA4CUmxhSCw3_00rC2o-tZbMPJNKpK25nCPvmKwvf7CJOHBef0Oq0QaQQza67Q4VO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gE5fcexh5C9n34H07fioqSD6Fi7O0NnvZwrU8My2uTVjg&oe=6A55AE69",
-        "school": "HillHOUSE",
+        "school": "ELI WHITNEY",
         "description": "To be added..."
     },
       {
@@ -206,7 +206,7 @@ STUDENTS = [
     {
         "name": "Luis Ismael Padilla",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718188672_4330442600538504_6145211294751209998_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=DazHZuhB-60Q7kNvwEYrtvO&_nc_oc=Adpeuzhm62bBd8VcQNGwSfkDMwyyEq8dwNq7z59RGDwXHco9gvmCjc_izGncgOmflG_cUdkhK8tyg48DuVle6EaV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGpTLXefE1flbgNryp_gt6V2rmLCTXsDNL-9wdjRckY9Q&oe=6A53D8E4",
-        "school": "HILLHOUSE",
+        "school": "CAREER",
         "description": "To be added..."
     },
       {
@@ -236,7 +236,7 @@ STUDENTS = [
       {
         "name": "Jeremiah Amir Ragsdale",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721859909_2112063449356095_1724427522335985681_n.png?_nc_cat=109&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=lQlKrZsd-10Q7kNvwGZX8pi&_nc_oc=AdrmBLePbaB2e6a6ddP01lSjA-suq2b2O8I9FkIT-jZAhBT-Yw1eyiw7DyKihZKo6TDFoPJAl_-8--RALnqjbYJQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGb6Gc6w6At-JkQUI7k9lhpuv6V3_XklBXDmyI2cfiiGQ&oe=6A53E531",
-        "school": "HILLHOUSE",
+        "school": "CAREER",
         "description": "To be added..."
     },
      {
