@@ -306,7 +306,7 @@ STUDENTS = [
     },
       {
         "name": "Nydeliz Dariels Torres",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722446876_1588670972683669_2424562583428653438_n.png?_nc_cat=100&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=7jVWMQ_JXgkQ7kNvwFXXeYH&_nc_oc=Adq3s6RgQpbLa10fakFk9DwnjX6uB5DBK7J3GboOTA4Kv9hjhiYKibKwN1X1apMIoTGDj8NJymjPUWZLGMQTVLQH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFXHtVLYw2HObmB8DAbE-Y4GHlgMl8no8H7NJTKX4SqVw&oe=6A52E402",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721247384_1362607479131852_1577674556112542818_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Dxy1KVGVtIEQ7kNvwHtDEl3&_nc_oc=Adqu96ggITipQxk0M2oimf2RGg8bgSzTwtZJQxvNFzoRTjaZPhDqrbx2uD5vr2RWrI0VIX6Q6XUI9n4p-iB5gO1b&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gECXNPgRiP2FIr0tJChFPddZc3GepPVzGRBIsgyKfgQlA&oe=6A59482A",
         "school": "Eli Whitney",
         "description": "you cant be stuck on the past when your future is bright."
     },
