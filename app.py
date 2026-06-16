@@ -59,7 +59,7 @@ STUDENTS = [
         "description": "To be added..."
     },
      {
-        "name": "Nicholai Josiah Oponde Brown
+        "name": "Nicholai Josiah Oponde Brown",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/716449948_904421129333899_2213070239753761798_n.png?_nc_cat=101&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=oWpzUthyMscQ7kNvwGRz1Ie&_nc_oc=Adr0TqcR7xYyPxCOd1LBwSaoUZ1z8WY07lIFLe9E7LJt4oJ043genTyZJj59lvbBamKCxVS8n012d-rScaZJ9e4j&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFkeTLMIz-u9qPbJ53wgEPect3Jz6HeKI9JPYAuqp5BDg&oe=6A53C149",
         "school": "COMMON GROUND",
         "description": "To be added..."
