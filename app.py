@@ -20,7 +20,7 @@ STUDENTS = [
         "name": "Joel Emiliano Almeida Figueiras",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721777850_1029188303005463_906538504239668150_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=r83AShUIKawQ7kNvwF7kGOI&_nc_oc=AdrLg4WBSkD-1UDx9hILLfc4hvalKnp4KjRca4Fupw7YuUfJZoC4ukBmtEVy-iI49pn4KyVoplZiu2AjAZk4dgxZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHnCkZ62rnDwkx6PVmCNZCCKUXYEokayDiHJ5uxWTaWow&oe=6A53F099",
         "school": "Wilbur Cross",
-        "description": "To be added.."
+        "description": "Hoy celebramos el final de un gran comienzo."
     },
     {
         "name": "Monserrat Arenas Martinez",
@@ -104,7 +104,7 @@ STUDENTS = [
         "name": "Danna Alejandra Espin",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719425511_1756160205546573_3642868250869210915_n.png?_nc_cat=101&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=6NHHuS_s8hEQ7kNvwEQGY4S&_nc_oc=AdpQahPzdJx2m1ZznyaukSF3RXzo-hb8ZI3Mqr8xFF5q6tQCSU_kSQe6qZLY3IT7VVY9l6D9aHXu7rT-HbyVboAo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHObS_wnLrmxKmS2K6HyxD1GarF_ZCaUY3k_2AwrQ20Xg&oe=6A5599B7",
         "school": "HillHOUSE",
-        "description": "To be added..."
+        "description": "Tus esfuerzos de hoy es tu éxito de mañana."
     },
      {
         "name": "Zackary Cody Franklin",
@@ -140,7 +140,7 @@ STUDENTS = [
         "name": "Darianny Elizabeth Hernandez Adames",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722560101_2069685263633841_1285647371778104536_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=YB94TO_cZzIQ7kNvwElldAS&_nc_oc=AdozqQC-i8aEYb6zsZ8UHvGxxUmv5d_TdnVjhERx54eNh0n1jfU5_t54Oh9bitZQJV11-T7OHXHAwegPFxTjSB94&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHBKIu2RQ0YmoDeSm92T_a2sk0PIeDtLEJQRgcM9hDrxA&oe=6A558579",
         "school": "Wilbur Cross",
-        "description": "To be added..."
+        "description": "This is only the beginning of my path."
     },
       {
         "name": "Dazani Hough Faulks",
@@ -180,9 +180,9 @@ STUDENTS = [
     },
      {
         "name": "Merlyn Anhelis Ninasunta Vegas",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719351003_1596335762214887_874009053040774146_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=jMCkZ_f-Nl0Q7kNvwGv5aFM&_nc_oc=Adq1Jgb38xQ1i8dpMty6aM-DhwydP2hLIux6Io4Vbs_gyiuX2LCbN_p1nXjFj4yOnq6y07GR9CKcEakBkJseATaw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFSFW8tVVlClQfoCAUZjhpb0Wpqu1D74-InAYBQBWBE8A&oe=6A53E893",
+        "photo": "https://scontent-bos5-1.xxris.fbcdn.net/v/t1.15752-9/719351003_1596335762214887_874009053040774146_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=jMCkZ_f-Nl0Q7kNvwGv5aFM&_nc_oc=Adq1Jgb38xQ1i8dpMty6aM-DhwydP2hLIux6Io4Vbs_gyiuX2LCbN_p1nXjFj4yOnq6y07GR9CKcEakBkJseATaw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFSFW8tVVlClQfoCAUZjhpb0Wpqu1D74-InAYBQBWBE8A&oe=6A53E893",
         "school": "WILBUR CROSS",
-        "description": "To be added..."
+        "description": " Este título lleva tres nombres grabados en el corazón: Dios, quien me dio la vida y las fuerzas; y mis padres, quienes me dieron las alas para volar."
     },
      {
         "name": "Roiy Nizami",
@@ -212,13 +212,13 @@ STUDENTS = [
         "name": "Masen Elijah Pena",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719948624_938199269225323_8889349459118048770_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=mIHXGzIO_9kQ7kNvwFPubmS&_nc_oc=Adoqv3QXOc4SKYNkBHvvHjo33dhzv_8eEweE7uWwQ8LT9EuhACiAVpef5F22nTeTA0XzyxJVJKQSf3GhgA-gGKlM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHK74ruBniRlWszGMGhrE4FtrlzKXKKv5j7Gb0BvMWIwQ&oe=6A53D680",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": ""
     },
       {
         "name": "Cristobal Andres Pluas Palma",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718776631_980832648074902_6515945823802202733_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=jc1s_ou1LHQQ7kNvwGg0RZy&_nc_oc=Adp0vwmVY_5N0KGktfu-X8ucIOcamnCQq3idRCjKxoRvDIse9WkTAnvrsijByH6K7x1UMGY4Uypkdec-IgaoIfVy&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHTgWU10VQ9H_kZDNVHiIZ63yn9rCfDwxUNdWXaoedH-g&oe=6A53CCBB",
         "school": "WILBUR CROSS",
-        "description": "To be added..."
+        "description": " Este título lleva tres nombres grabados en el corazón: Dios, quien me dio la vida y las fuerzas; y mis padres, quienes me dieron las alas para volar."
     },
       {
         "name": "Jeremiah Amir Ragsdale",
@@ -302,7 +302,7 @@ STUDENTS = [
         "name": "Jostin Enrique Suarez Quichimbo",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717776590_2421717721572462_893519492611999392_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=grlCTg_j7ScQ7kNvwFrdsIx&_nc_oc=AdrOSAjLsw5O6VqTWsNGS_noOPkOlcjgoMJNUtMgr0wFWRWk1cJnJfZ4csoNmCf6kUZtkzSk7AyRLBHe5xrFUa_t&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGjgGKUqRohUtXApiEuvtBQNA4WsZRhhyb-890JRB13RQ&oe=6A53C822",
         "school": "WILBUR CROSS",
-        "description": "To be added..."
+        "description": "Ganamos un diploma, pero también memorias que durarán toda la vida"
     },
       {
         "name": "Nydeliz Dariels Torres",
