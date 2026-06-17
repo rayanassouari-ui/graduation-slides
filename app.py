@@ -230,7 +230,7 @@ STUDENTS = [
         "name": "Angie Porter",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721733559_1548682056958635_5597990434896591474_n.png?_nc_cat=109&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=SeqCtNPm3UUQ7kNvwGP63ND&_nc_oc=AdqMq1Jj-6xH3GqKMpS7L2I8p6-nWwGDyghg5cNA_aTIX3mEulaZbxAeFcr-YOMtP6ClYsEPwlcHCKgYlnrA1VQZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEpM3E7MnsiNCLy-aDOgm2JeR84Fks1ko2kOISqFGLxwQ&oe=6A53C580",
         "school": "HILLHOUSE",
-        "description": "To be added..."
+        "description": "This is just the first step"
     },
        {
         "name": "Mirwais Rahmani",
