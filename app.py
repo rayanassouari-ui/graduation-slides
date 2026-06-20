@@ -44,7 +44,7 @@ STUDENTS = [
         "name": "Rayan Assouari",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718174094_1485303206115509_8209481933846804205_n.png?_nc_cat=105&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=5l2M_QpIO_AQ7kNvwHTtnaW&_nc_oc=AdoSlKchkYb7huLjwJU1EQNrPpIlRRZgI0gYVsAJVH0A5IHEE0zlqmcDy951QISaYWbK-Oujx5U4714H_oSpeiB1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHpuX87RL0lcgXZZmiMUWFVsHMv0kfLi7knAAxgMrZI4Q&oe=6A53D627",
         "school": "High School in the Community",
-        "description": "To be added..."
+        "description": "We started this journey as kids, learning our way through new challenges and experiences. Along the way, we grew into leaders, built lasting friendships, and created memories we'll never forget. 8th grade complete high school unlocked."
     },
       {
         "name": "Yeimy Carisa Barreda",
@@ -62,7 +62,7 @@ STUDENTS = [
         "name": "Nicholai Josiah Oponde Brown",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/716449948_904421129333899_2213070239753761798_n.png?_nc_cat=101&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=oWpzUthyMscQ7kNvwGRz1Ie&_nc_oc=Adr0TqcR7xYyPxCOd1LBwSaoUZ1z8WY07lIFLe9E7LJt4oJ043genTyZJj59lvbBamKCxVS8n012d-rScaZJ9e4j&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFkeTLMIz-u9qPbJ53wgEPect3Jz6HeKI9JPYAuqp5BDg&oe=6A53C149",
         "school": "COMMON GROUND",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Leeyanna Caple",
@@ -74,7 +74,7 @@ STUDENTS = [
         "name": "Angel Jose Cruz",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718618041_1689091345473765_6942466726756645308_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=PGdsSYjmZO0Q7kNvwGLhWmx&_nc_oc=AdpqPB7OO3Za5LS_3hEWJPhgVMKTg0YSm_E9lTkDrZEj-MtTYiFjhRrrdR2FVZtPaD_AFn9tVT3GBRNfC0N1bP1A&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGA0z2yxMWAl8FpWEZ7n3iLacgZd7FIeSarQW7-LRjp_g&oe=6A53E5ED",
         "school": "HillHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
     {
         "name": "Nagedlie Sofia David",
@@ -92,13 +92,13 @@ STUDENTS = [
         "name": "Alexis Diaz Gutierrez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719739528_1766562911378131_8752246990843423895_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=-Rv1oGznFOgQ7kNvwEfrIZi&_nc_oc=AdpuBfBi4ZN8jCr_bwEo_LNmi-IWGI78fFlICg9yriFZUDj3jKp3Q2BP3wdzKyqmVbB4jknOEf3WzNKMtaVCJ_tR&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHUmxOgqo6WLURw8fHkPx4ItFBycvQGGczPKt-uQNwF6g&oe=6A559EF6",
         "school": "HillHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Khalilah Marie Donnelly",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/720971406_2433331960500846_6511791222604261922_n.png?_nc_cat=105&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=akvZGeYwjh8Q7kNvwERdFJ2&_nc_oc=Ado1Sekw3XBR_2FmFFRvp_a27RaAD1hUFGaU_WZuIihUpsaUY2wcZDXb6yq6LusPenj_CENtc_UR1GSHxDF17Rq6&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gG4W-3vKMgXVz2yX0_lH6BSrnVF4EYUpXtRCQvlVWmMzQ&oe=6A55B891",
         "school": "HillHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Danna Alejandra Espin",
@@ -116,25 +116,25 @@ STUDENTS = [
         "name": "Leanna Fuster",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718263949_1309025024650107_9020402490035178169_n.png?_nc_cat=108&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=jQeJhh0YmnYQ7kNvwGUSpOM&_nc_oc=AdrwMaFu5DPc5HxjqKlqZVqnQNUMG151Mh47SgFfMiJuwdmT6oyYzGqlXq4vySJBshug30cfKwwZQBU1lcYQx5CJ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gG0rAyaaG1VUQdQ76CX0ZdSHF-Q0ma3A7JDJR5EJyir0w&oe=6A558B22",
         "school": "Wilbur Cross",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Destiny Gibbs",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721041082_1774132640242414_7779091490562396426_n.png?_nc_cat=103&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=KE5NyXxL3O4Q7kNvwEGrYRa&_nc_oc=AdpZoVb8x0bnjKF_fzJka1aEtFTNU2t1ErgnPlJT2prVLqR__UPnZrnFxeNWCrt8MMOuuRWimVER3uOErrFFKBD2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEblg4-BV0C6uDex7TiRpFghAobjLEon0lPiAlKix0NKg&oe=6A559D54",
         "school": "ELI WHITNEY",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Abel Yamil Gonzalez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/724122968_1022562240180511_4881765402960083635_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NROkLqzBMy8Q7kNvwGHRfNA&_nc_oc=AdrUPI5CVPAPqw3MiPmCAaooA4CUmxhSCw3_00rC2o-tZbMPJNKpK25nCPvmKwvf7CJOHBef0Oq0QaQQza67Q4VO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gE5fcexh5C9n34H07fioqSD6Fi7O0NnvZwrU8My2uTVjg&oe=6A55AE69",
         "school": "ELI WHITNEY",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Sean Haynes",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/720552461_1715932569639015_240536822218145071_n.png?_nc_cat=111&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=z7U-JUSusyMQ7kNvwGM9XYl&_nc_oc=AdpV68CBGjYPymBf-YaYrVYnbZyUKe6MCGBSpwTpwrMHOcIKuuuN_TZtNl5gt-zx0995a7wwwIwzfKuVrzJS0qfH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGCEdowX8aFMiV7IIH2xqfGU57X599pWGbbPlg4dhZnTA&oe=6A55A1F4",
         "school": "HillHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
        {
         "name": "Darianny Elizabeth Hernandez Adames",
@@ -146,19 +146,19 @@ STUDENTS = [
         "name": "Dazani Hough Faulks",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718576542_1273879764565176_6645002937192013049_n.png?_nc_cat=109&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=NsKo1GPbJtIQ7kNvwFvJBC3&_nc_oc=Adoa-w_mYI6mh-2SH392yEDPJXbscfyr5LdlTy03OmELL5myaHLuR0kYg7Azmz8KL9Xj5ncJyMGHHH4KmCppYiWs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFzCEYJjcXh3PwmT5bNTnasahNTK6ZwD0jwxo2mGQ5dng&oe=6A55AA65",
         "school": "Metropolitan Business Academy",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Raima Kalampai",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/720646947_1455764956586166_4619077154250522274_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=kpQQC4V8doMQ7kNvwG-IyW5&_nc_oc=AdolIGZyQnnMjINzzZ573VfuyN4ceDE6zLASnvxKXgdlOa16VdD06E2vx2xOtpbSH-oQQVahQya6AkvxHbqM7N1X&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFqhbYajEB5KAI1ZQLpx5NWKvKyFXKwMMZXn3oKd7NEEA&oe=6A55AFB7",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
        {
         "name": "Wilneysha Michelle Lopez Ortiz",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719573071_1007831745277663_6123922832413939458_n.png?_nc_cat=107&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=O9eZBCvUkx8Q7kNvwEP-Nzn&_nc_oc=Adp9EUC4ALQrkFnaVY8fZ0_Ht9qSsHG11FGQtBdyl-b1nQ6d3pG69oGo1O8LQyYuQPc5yTJYpxBKiIKuM7sxp9l8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gG2wd7AiyQSfgiIKMJvB8-xJRMOXonrcW9BCsaa4ukmaA&oe=6A558E1F",
         "school": "HILLHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Aliana Angela Lopez",
@@ -176,7 +176,7 @@ STUDENTS = [
         "name": "Matthew Muniz",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718979974_1684756596108544_3721482075968536841_n.png?_nc_cat=106&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=UB_GZLZBb5MQ7kNvwHT6iOP&_nc_oc=Ado8I0MtyV4jtjG5Nme5wxLOls5WIBkKbXMOevChk9zpBuOZVUjnuei-empvdYiP2Pq_seDTBMvw4mgdRQxZ646w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEM0RagCYdHgPkbIhpY4piS6gZUOSUimCxRW4nkdY9T6Q&oe=6A53CED2",
         "school": "ELI WHITNEY",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Merlyn Anhelis Ninasunta Vegas",
@@ -188,25 +188,25 @@ STUDENTS = [
         "name": "Roiy Nizami",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/720038871_1498430761181471_1001061767251977530_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=dxvuVzR0QVsQ7kNvwEv1LyE&_nc_oc=AdrLUOZDIjbycajS9YWerdY4QGRdB91eh22vAwWqfVWh12lVHJ93bx-Fo-uLCFxYGgE9tv1tyAyrfxWMyxoksgBS&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHXkHSRILYUDLtndvGWHV4ZaQWa2r6H_6DgSnjRZ8Fo_A&oe=6A53E0BF",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
     {
         "name": "Luis Ismael Padilla",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718188672_4330442600538504_6145211294751209998_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=DazHZuhB-60Q7kNvwEYrtvO&_nc_oc=Adpeuzhm62bBd8VcQNGwSfkDMwyyEq8dwNq7z59RGDwXHco9gvmCjc_izGncgOmflG_cUdkhK8tyg48DuVle6EaV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGpTLXefE1flbgNryp_gt6V2rmLCTXsDNL-9wdjRckY9Q&oe=6A53D8E4",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Sima Paktin",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717264376_1469970991826914_289310158123843875_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=3l789cK3s3gQ7kNvwEhVnPN&_nc_oc=AdqNZj2Qmuucj-Smj5KUIpeISIQVZUMbCudk5kpfiZmm7ijKKKFKhEKObheeP38-rmb-6wbGXOtxXPJZacilsSx7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFhZT_egSx_hm1J4vo5bVfumAftPfmHZMuUTf9aWGq10w&oe=6A53D7C0",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
        {
         "name": "Mannix Eli Pena",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717958560_1034716142834073_763122134756753726_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=tHdOm7YZfCwQ7kNvwFLHWZX&_nc_oc=AdqZaV48DziwIxqChQvhXdGBKMNO96CL3KQtNxxjX08bsnSa7s9xDiSIBW0B7KnfZmx6pH132HALJVIr1uGTXvrH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gH5nRL3kJNY8eMwdihBFL3TrFTMB4gZsBXLLRcJUJbknQ&oe=6A53C4AB",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
        {
         "name": "Masen Elijah Pena",
@@ -224,7 +224,7 @@ STUDENTS = [
         "name": "Jeremiah Amir Ragsdale",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721859909_2112063449356095_1724427522335985681_n.png?_nc_cat=109&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=lQlKrZsd-10Q7kNvwGZX8pi&_nc_oc=AdrmBLePbaB2e6a6ddP01lSjA-suq2b2O8I9FkIT-jZAhBT-Yw1eyiw7DyKihZKo6TDFoPJAl_-8--RALnqjbYJQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGb6Gc6w6At-JkQUI7k9lhpuv6V3_XklBXDmyI2cfiiGQ&oe=6A53E531",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Angie Porter",
@@ -236,31 +236,31 @@ STUDENTS = [
         "name": "Mirwais Rahmani",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/716985913_2026629624599929_424378790157544204_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=rUtRU2BisS0Q7kNvwH2FoM0&_nc_oc=AdqmT8w_-NMhybG5LgyFatEO-MeGSRnFbyfGAJlF09EhrhgoX9FL5b1o0IudxFX2CSeuf4YWUBuw05tvmhz02rD2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFVZRXGb0fIKoqIm2CAQZWssgCWDQqxyAs5uJfy325zFw&oe=6A53E114",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Mai'Jor Jayvon Rangolam",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719031717_2521504941613820_4676102658479316969_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=CWVDowt3ebIQ7kNvwHhRrdF&_nc_oc=AdpZDmSO-4l_WSa1i8Nh-NbsGC8RSJpjJw32kt9G0iZQ57eOefokXppN08lQjLaxnhg7lZUCHOCB9kRG0HvMOokC&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEdv7rbIVsDUIAkXUGBZEBrqz2Q5Hj0v3osEdbKVboqTQ&oe=6A53E64B",
         "school": "HILLHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
     {
         "name": "Carl Roberts",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/723674838_1810220336618385_8822610571238781138_n.png?_nc_cat=103&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=KCjHKKfyyCgQ7kNvwE-uWO6&_nc_oc=Adqq9H3PqvwGh7A9hLvKN3mGk5OrCJOBjnjCXwiLczhCXn-r75ykFxwqUYcIfP7KKvTW77pQIddNCU7mtOnHMxH9&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGi_9PauOpAnn7iaDxYNFxNameapMEM_-JC8lnMp1t6HQ&oe=6A53D75B",
         "school": "Metropolitan Business Academy",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Arzo Sadiq",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718131143_937409642661670_1620381177160620473_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=87gMbT-4Vq8Q7kNvwHIkiKE&_nc_oc=AdoEbTdnWkCtjMmHCW44Glbr-3k5l5DGEeJwORb5tcyaJW1xHyYVRkw7evw1eSKBfVAd6HoVG4eDLqEEyVRIOzZR&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEqbhaIoFtAyht_Zyl9M4v3YtAcTg49sHrIAEVB3xZzDg&oe=6A53F366",
         "school": "Metropolitan Business Academy",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Xavier Sampedro Rosa",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/723607544_2436962116771653_5048999379128685691_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ZRRrdG5_4mYQ7kNvwFBvteQ&_nc_oc=AdoM4Sh5vHMwOBQK-tq2pOQjv8yXJwvth8tDaZwOK_ZbvutqcY_atdyhCUFqt3FIqA2HeNw31psDNXF-bcWN0NId&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGo6qCUHLOx1FSyYeOiIAhCH3rhx3P6i9ulybZLCwiazw&oe=6A53DF71",
         "school": "HILLHOUSE",
-        "description": "To be added..."
+        "description": " "
     },
     {
         "name": "Steven Santos",
@@ -272,31 +272,31 @@ STUDENTS = [
         "name": "Juan Rafael Scruggs",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/716950297_1324220715782184_801973422774066293_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=60ndn6_fkToQ7kNvwEJU7um&_nc_oc=AdqSG2_8AfEM8DLIvGm8Idb4jSUTI7YCjAfHVOMklLt6qWuL36wcR6E6qSGdr3Q4cUSYGItHnqiVRcy-vUiSrTOJ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEAza9B3pSoNhuAIKDb2-KEDGJjQigYOapzJ_E13ZP3xQ&oe=6A53E091",
         "school": "High School in the Community",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Rohid Shamshad",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/716509919_1020654403808975_752389801508680566_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=sYKcYpfAv3QQ7kNvwED8wsu&_nc_oc=Adr2wJ2Eb2TuoOenS3KxZ_aHJLORtnToGuRFcbjJDpPSmZucYhTXOSgQLF8hCfurAkpXqKMg3eM1svf7fUE2mWHk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFab3tZV3p9bZMraaVoTyDXxTpCnNBVv-nMj3lCY8Cg5A&oe=6A53C6BC",
         "school": "WILBUR CROSS",
-        "description": "To be added..."
+        "description": " "
     },
        {
         "name": "Maurice Lamont Smith",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/720085534_1329882025138713_4254968528441248336_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ui35EZnzR8oQ7kNvwGP1qB-&_nc_oc=Adp9DCycDOvSZo6ZThgMH5A-Hx0f31U1fVgx5Zw2IOeyfZVDoCRdryzJ10nzkNACsn3pdrm_KUm-_R30KLuUdVO3&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGbNdsKPWj5iKvHbGBMBBul0NHRY30JxYAVfqB8lzEjfA&oe=6A53ECDC",
         "school": "SOUND",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Alaena Lee Soto",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/715749873_1423534989535515_323132545262997004_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nPkNAJBXEjEQ7kNvwFnh9WH&_nc_oc=AdoHn0_CqY5_k6qmX6g4vxrZwhBFlJv_wEZnhw-TSmJs0yz6vyyNNY9Q0yQJv5hkfVlHmc9o_RWWzn3t4ZZ-ZtZo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHhj0R5IRRdyeczIMND4AwFt0KgqxxnLAw7BoJF4Fa3aQ&oe=6A53E3FE",
         "school": "CO-OP",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Eric Maurice Speer",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718276287_996968516258287_895336029880586020_n.png?_nc_cat=108&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=IKsKX-6ncqgQ7kNvwH_JAvT&_nc_oc=AdoIL6rOaZvrHAGpl6xm-Gx0hh9KEBxq0Niy3GlKbyZwavHSKqD_Ict4tzohXXXe8nt9w2EthdkG8IhfeptdMyqL&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFyrYwlHE4Ap0joH6TZXj5zQAaYObtp8GaNIcfVowPcIg&oe=6A53DCDF",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Jostin Enrique Suarez Quichimbo",
@@ -314,19 +314,19 @@ STUDENTS = [
         "name": "Caeli Love Tran Hamilton",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721134726_2243319573075178_972262053724537543_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=sOC9soYqsvoQ7kNvwHY-VfC&_nc_oc=AdpzeWJFjVqRioSsaSInbmABliCS-A6rIfhYtL42nFcYdTWni9UxvIohcNsqI17tovl_um6Gphu2DagwgF-uMoKW&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFDMpuC7Qc3Xdv_IE0AfFfxFthP6ozl76kZeFKh29nmEg&oe=6A53E809",
         "school": "CO-OP",
-        "description": "To be added..."
+        "description": " "
     },
       {
         "name": "Aiden Alexander Velazquez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722073923_2085001015415375_4130210383437647087_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8KAD9h6OHiMQ7kNvwHK2LJd&_nc_oc=Adr9V9V1va-QO06pA5vGUu27j7-lrhTP5gGrStTHAE8YLq58oSRzx9rTEGp4hGvaJty8beG4pfSSxlqA7Pk7fOsO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHSgSbc_X8RFy-1ULGKoQalsLYyzQeoIVM-60ajhMZhHA&oe=6A53D1D0",
         "school": "High School in the Community",
-        "description": "To be added..."
+        "description": " "
     },
      {
         "name": "Gianna Washington",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/720248293_1531674865264429_3051644155272085323_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=FCpsbMcGbtcQ7kNvwEDTq3g&_nc_oc=AdouvJ7iFA_KldqXXgBw564Ur_CqcQ2yMXuBsAwqMox-iq9q23J-3IJj1OhQM0xujavIvNeaVacSCAcy542vRU5M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEBkTDEEHtooXTztghAljgbIdMfbf8jq1yXqkye_D83vg&oe=6A53EBC7",
         "school": "CAREER",
-        "description": "To be added..."
+        "description": " "
     },
 ]
 
