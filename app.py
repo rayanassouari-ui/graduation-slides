@@ -26,7 +26,7 @@ STUDENTS = [
         "name": "Monserrat Arenas Martinez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717437077_2781554768875024_8612860244642542718_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=olC0gQFhw3UQ7kNvwE34Soz&_nc_oc=AdojQJCvn4dVEcsU5nFlCxEod7t0X8blHQvOhVX64vm4hqm4nsP29POXeisNcwlViUz2qmIEsEANYfW5JOgHYl8n&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHqmnwQPGFiH_bTKdW8YonsXqjHe_cix5_0WCusuXEACA&oe=6A53CD63",
         "school": "Wilbur Cross",
-        "description": "To be added..."
+        "description": "Pray and never give up."
     },
     {
         "name": "Iliana Arocho",
@@ -56,7 +56,7 @@ STUDENTS = [
         "name": "Aisake Levon Brandon",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/715352880_1522818662873822_3998643176800705601_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=GuMRcBYqN5QQ7kNvwGoptQe&_nc_oc=AdrpgwQUnEmOHa8W2Phl4TP-YZ9a8Ixl-AS0Z--mRMTLxlhc9NtZO0qOQmwN0dkN7uMWto1Jg5EI7DpL6OZZVfAl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEqLumrI9LToHpnizuEVhdhzgcjsyGXKYZf-FLDzg_rig&oe=6A53E444",
         "school": "Career",
-        "description": "To be added..."
+        "description": "If you are weak to fight your battles don’t give up because god will fight it with you"
     },
      {
         "name": "Nicholai Josiah Oponde Brown",
@@ -68,7 +68,7 @@ STUDENTS = [
         "name": "Leeyanna Caple",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718867858_37388105664122070_2911884564444285426_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=bLUgKI1D5kwQ7kNvwFvyy_l&_nc_oc=AdqruEFQP9jeV_Kc7KJtm7hak5uqfiqUWvNdxA8X7KHWj4775Up166ZLJsxdQaufffkfb15f-Wgqk3XAqfzfnama&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGSh4olOLOJb3tC-z0OPF5jH32zXbetf829MDqRRpVe7w&oe=6A53CFAC",
         "school": "Eli Whitney",
-        "description": "To be added..."
+        "description": "People change, Things go wrong but just remember life goes on"
     },
       {
         "name": "Angel Jose Cruz",
@@ -86,7 +86,7 @@ STUDENTS = [
         "name": "Jareliz Dejesus Gonzalez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/722383784_27822876327304411_1852822208861624548_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=pVUyj5w_gOYQ7kNvwFzmCHh&_nc_oc=AdrCO7tt8P5Apd7j2FMKNTDINKWJp78uotHwwDRLosw6ZaqjPfFuvvvtbEa0fau5Y00VLp8QL8DawclJ2gCiAcN4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEObSO2xmQW1vIObSOgkzdZyukmhXT2R_Z8AhlEalRGnw&oe=6A55A4E4",
         "school": "ELI WHITNEY",
-        "description": "To be added..."
+        "description": "Don't ever let anyone make you feel like you don't deserve what you want."
     },
     {
         "name": "Alexis Diaz Gutierrez",
@@ -164,11 +164,11 @@ STUDENTS = [
         "name": "Aliana Angela Lopez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721168429_1693502801565994_1847310654048389047_n.png?_nc_cat=110&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=qiacrXCnmnIQ7kNvwFQPPx_&_nc_oc=Adqee5mkpUrn-tDib6iE9_Qk6leEoRZ5HCjILywVDK0gT7eAGFmfjLXUzjc-cgnwBDefSBnFRXjGEdTaKlGnuphC&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gEARDG3S6jpInTP8Bh9b165mj85qGsVeBlPSEhCCBTtLA&oe=6A53D49A",
         "school": "ELI WHITNEY",
-        "description": "To be added..."
+        "description": "The thing about new beginnings is that they require something else to end."
     },
     {
         "name": "Jeziel A Martinez",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717128929_1303530098658899_660310397688010469_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=C-P1Jk0KI6sQ7kNvwFibVOl&_nc_oc=Ado4uqRIKGhlpgwL6wbGiiwAjPyCliDNN7rNPaBO712R6jSjTlLadL7S11Da-8KRrctMSRURb_ZwAaNHmmVLzFoa&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gHycjj4ufHrtaqs6yp8KEUGu2Ovql7LRUD0a8LDjMQtVg&oe=6A559AD5",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/725923758_901456966303956_4209884373357924891_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=-FJi3KwAJkgQ7kNvwGrrJJm&_nc_oc=Adoe2qTIlw32sfKvKFRBY2lq-4-2blkgDh-kdVwPcbmtPvBRQP_jOP0kvLpZwJNM6UCVfca4MFbqTlmJTyGkotNP&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gFETUiw-n4REksYfJ04XT8NB0TSefWfA10fOzZmrn7qOA&oe=6A5E84DD",
         "school": "ELI WHITNEY",
         "description": "Only the fearless can be great"
     },
