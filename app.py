@@ -24,7 +24,7 @@ STUDENTS = [
     },
       {
         "name": "Ahmad Amirzai",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_688389Lui3978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=eTaKXsGIyNAQ7kNvwEKimov&_nc_oc=AdpORqkQpSaVDbcbrmpq25VwZHrRJ9yl7_3y_ftl1s9GZ117WbqM91L4BZXqtwmN5BbP0WO2qrEBBxOfsTN1ztnV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFKS0QrqWKYLQaCAXuaZPxTzd7hu3wdTHcDKjatAZxKiQ&oe=6A53BD11",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_6883893978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=JJ0x4tZ8-kEQ7kNvwG3Mnb3&_nc_oc=AdpJ8tPq3MRc4fWqhMIv9NQerqqxKaqs_ByChdmHXHIaK0s0g3hAiG6GhpxMr1NAdmfVazxZQtPv2-Kwe6XQUey0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b2a8&oh=03_Q7cD5gH8ZWPB1WlL30HP_KS_vqYZE2lxhMC0lrdvLmkFh72COA&oe=6A60EC11",
         "school": "New Haven Academy",
         "description": ""
     },
@@ -180,7 +180,7 @@ STUDENTS = [
     },
      {
         "name": "Merlyn Anhelis Ninasunta Vegas",
-        "photo": "https://scontent-bos5-1.xxris.fbcdn.net/v/t1.15752-9/719351003_1596335762214887_874009053040774146_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=jMCkZ_f-Nl0Q7kNvwGv5aFM&_nc_oc=Adq1Jgb38xQ1i8dpMty6aM-DhwydP2hLIux6Io4Vbs_gyiuX2LCbN_p1nXjFj4yOnq6y07GR9CKcEakBkJseATaw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFSFW8tVVlClQfoCAUZjhpb0Wpqu1D74-InAYBQBWBE8A&oe=6A53E893",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719351003_1596335762214887_874009053040774146_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=690wpQx3LQ4Q7kNvwHhNa7s&_nc_oc=Ado9bb9cbCsQXwRMt_anyROISZr4chhpEw66RoGRLb62LTP5sEWNErvQdJP1OZkU5bwaKClS-ZfKqjU-x-dvpV9h&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gHigoc_60bhd2repzVzxaSSP1yOO_tDTJIGtwzpPMoLkw&oe=6A60DF53",
         "school": "WILBUR CROSS",
         "description": " Este título lleva tres nombres grabados en el corazón: Dios, quien me dio la vida y las fuerzas; y mis padres, quienes me dieron las alas para volar."
     },
