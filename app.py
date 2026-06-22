@@ -22,6 +22,12 @@ STUDENTS = [
         "school": "Wilbur Cross",
         "description": "Hoy celebramos el final de un gran comienzo."
     },
+      {
+        "name": "Ahmad Amirzai",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_688389Lui3978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=eTaKXsGIyNAQ7kNvwEKimov&_nc_oc=AdpORqkQpSaVDbcbrmpq25VwZHrRJ9yl7_3y_ftl1s9GZ117WbqM91L4BZXqtwmN5BbP0WO2qrEBBxOfsTN1ztnV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFKS0QrqWKYLQaCAXuaZPxTzd7hu3wdTHcDKjatAZxKiQ&oe=6A53BD11",
+        "school": "New Haven Academy",
+        "description": ""
+    },
     {
         "name": "Monserrat Arenas Martinez",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717437077_2781554768875024_8612860244642542718_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=olC0gQFhw3UQ7kNvwE34Soz&_nc_oc=AdojQJCvn4dVEcsU5nFlCxEod7t0X8blHQvOhVX64vm4hqm4nsP29POXeisNcwlViUz2qmIEsEANYfW5JOgHYl8n&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHqmnwQPGFiH_bTKdW8YonsXqjHe_cix5_0WCusuXEACA&oe=6A53CD63",
@@ -33,12 +39,6 @@ STUDENTS = [
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/723130008_27490694547222673_1950729644942787669_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=z2XGJJqm4EcQ7kNvwGvmVtU&_nc_oc=Adql_otsLppi5eJ_ixGXexXg3kRJtbkH0wvLQvfk-kqpxP2V1huPf0QmjHf3SAhY1-jGck4x4UPIoXIPPpw7Htgn&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHfEcfocyP4J09-45w4KUwLM3ssyfKPzN4wp5aYvf03kQ&oe=6A53F0FC",
         "school": "High School in the Community",
         "description": "8 years done many more to go."
-    },
-     {
-        "name": "Ahmad Amirzai",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/717115052_1887602905530550_688389Lui3978500826708_n.png?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=eTaKXsGIyNAQ7kNvwEKimov&_nc_oc=AdpORqkQpSaVDbcbrmpq25VwZHrRJ9yl7_3y_ftl1s9GZ117WbqM91L4BZXqtwmN5BbP0WO2qrEBBxOfsTN1ztnV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFKS0QrqWKYLQaCAXuaZPxTzd7hu3wdTHcDKjatAZxKiQ&oe=6A53BD11",
-        "school": "New Haven Academy",
-        "description": ""
     },
     {
         "name": "Rayan Assouari",
