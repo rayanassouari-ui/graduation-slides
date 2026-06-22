@@ -103,7 +103,7 @@ STUDENTS = [
       {
         "name": "Danna Alejandra Espin",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/719425511_1756160205546573_3642868250869210915_n.png?_nc_cat=101&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=6NHHuS_s8hEQ7kNvwEQGY4S&_nc_oc=AdpQahPzdJx2m1ZznyaukSF3RXzo-hb8ZI3Mqr8xFF5q6tQCSU_kSQe6qZLY3IT7VVY9l6D9aHXu7rT-HbyVboAo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHObS_wnLrmxKmS2K6HyxD1GarF_ZCaUY3k_2AwrQ20Xg&oe=6A5599B7",
-        "school": "HillHOUSE",
+        "school": "Eli Whitney",
         "description": "Tus esfuerzos de hoy es tu éxito de mañana."
     },
      {
@@ -265,7 +265,7 @@ STUDENTS = [
     {
         "name": "Steven Santos",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/715440753_1703987814192303_5691246700707333359_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=mB9W0JuPPWAQ7kNvwEOveKa&_nc_oc=Ado3wNkvwJKNaBrqMK_sOd2n8b4XuvqB_e7NOO48xjEKFTH_zCl6SGexjUdbCQqAjNsA70VPswcxE_4od2O6Xtxn&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gFpfrvYkUdaX5jXy-0819CZtDIR3XkmOpN0MkAnlq1YBA&oe=6A53CE15",
-        "school": "HILLHOUSE",
+        "school": "Eli Whitney",
         "description": ""
     },
      {
