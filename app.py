@@ -42,7 +42,7 @@ STUDENTS = [
     },
     {
         "name": "Rayan Assouari",
-        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718174094_1485303206115509_8209481933846804205_n.png?_nc_cat=105&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=5l2M_QpIO_AQ7kNvwHTtnaW&_nc_oc=AdoSlKchkYb7huLjwJU1EQNrPpIlRRZgI0gYVsAJVH0A5IHEE0zlqmcDy951QISaYWbK-Oujx5U4714H_oSpeiB1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHpuX87RL0lcgXZZmiMUWFVsHMv0kfLi7knAAxgMrZI4Q&oe=6A53D627",
+        "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/729797466_1435457245280570_4878021146246557983_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=RgRLrMtu6V0Q7kNvwHdhpHc&_nc_oc=Adrb5KOcpTxvE-dzm1ebaKARN_L7HVZIGfWeYHiPxLEitBlxur6_RD3Yc04w83fjQ39VgXsYbCHcgsLffKj6xBEL&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7b6a8&oh=03_Q7cD5gEZikdqsMcMUFhp-7-pagdg65p8WvTziwU-BinExzoqrw&oe=6A61AD68",
         "school": "High School in the Community",
         "description": "We started this journey as kids, learning our way through new challenges and experiences. Along the way, we grew into leaders, built lasting friendships, and created memories we'll never forget. 8th grade is over time to move on to high school."
     },
