@@ -44,7 +44,7 @@ STUDENTS = [
         "name": "Rayan Assouari",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718174094_1485303206115509_8209481933846804205_n.png?_nc_cat=105&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=5l2M_QpIO_AQ7kNvwHTtnaW&_nc_oc=AdoSlKchkYb7huLjwJU1EQNrPpIlRRZgI0gYVsAJVH0A5IHEE0zlqmcDy951QISaYWbK-Oujx5U4714H_oSpeiB1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gHpuX87RL0lcgXZZmiMUWFVsHMv0kfLi7knAAxgMrZI4Q&oe=6A53D627",
         "school": "High School in the Community",
-        "description": "We started this journey as kids, learning our way through new challenges and experiences. Along the way, we grew into leaders, built lasting friendships, and created memories we'll never forget. 8th grade complete high school unlocked."
+        "description": "We started this journey as kids, learning our way through new challenges and experiences. Along the way, we grew into leaders, built lasting friendships, and created memories we'll never forget. 8th grade is over time to move on to high school."
     },
       {
         "name": "Yeimy Carisa Barreda",
@@ -68,7 +68,7 @@ STUDENTS = [
         "name": "Leeyanna Caple",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/718867858_37388105664122070_2911884564444285426_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=bLUgKI1D5kwQ7kNvwFvyy_l&_nc_oc=AdqruEFQP9jeV_Kc7KJtm7hak5uqfiqUWvNdxA8X7KHWj4775Up166ZLJsxdQaufffkfb15f-Wgqk3XAqfzfnama&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gGSh4olOLOJb3tC-z0OPF5jH32zXbetf829MDqRRpVe7w&oe=6A53CFAC",
         "school": "Eli Whitney",
-        "description": "People change, Things go wrong but just remember life goes on"
+        "description": "People change, things go wrong but just remember life goes on."
     },
       {
         "name": "Angel Jose Cruz",
@@ -308,7 +308,7 @@ STUDENTS = [
         "name": "Nydeliz Dariels Torres",
         "photo": "https://scontent-bos5-1.xx.fbcdn.net/v/t1.15752-9/721247384_1362607479131852_1577674556112542818_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Dxy1KVGVtIEQ7kNvwHtDEl3&_nc_oc=Adqu96ggITipQxk0M2oimf2RGg8bgSzTwtZJQxvNFzoRTjaZPhDqrbx2uD5vr2RWrI0VIX6Q6XUI9n4p-iB5gO1b&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-bos5-1.xx&_nc_ss=7a22e&oh=03_Q7cD5gECXNPgRiP2FIr0tJChFPddZc3GepPVzGRBIsgyKfgQlA&oe=6A59482A",
         "school": "Eli Whitney",
-        "description": "you cant be stuck on the past when your future is bright."
+        "description": "You can't be stuck on the past when your future is bright."
     },
       {
         "name": "Caeli Love Tran Hamilton",
